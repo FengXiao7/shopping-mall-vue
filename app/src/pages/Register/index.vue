@@ -11,58 +11,63 @@
       <div class="content">
         <label>手机号:</label>
         <input
-          type="text"
           placeholder="请输入你的手机号"
-          v-model="phoneNumber"
-          
+          v-model="phone"
+          name="phone"
+          v-validate="{ required: true, regex: /^1\d{10}$/ }"
+          :class="{ invalid: errors.has('phone') }"
         />
-        <span class="error-msg">错误提示信息</span>
+        <span class="error-msg">{{ errors.first("phone") }}</span>
       </div>
       <div class="content">
         <label>验证码:</label>
         <input
-          type="text"
-          placeholder="请输入验证码"
-          v-model="verificationCode"
-          
+          placeholder="请输入你的验证码"
+          v-model="code"
+          name="code"
+          v-validate="{ required: true, regex: /^\d{6}$/ }"
+          :class="{ invalid: errors.has('code') }"
         />
-        <button
-          style="width: 100px; height: 36px"
-          @click="getVerificationCode(phoneNumber)"
-        >
+        <button style="width:100px;height:38px" @click="getCode">
           获取验证码
         </button>
-        <span class="error-msg">错误提示信息</span>
+        <span class="error-msg">{{ errors.first("code") }}</span>
       </div>
       <div class="content">
         <label>登录密码:</label>
         <input
-          type="text"
-          placeholder="请输入你的登录密码"
+          placeholder="请输入你的密码"
           v-model="password"
-          
+          name="password"
+          v-validate="{ required: true, regex: /^[0-9A-Za-z]{8,20}$/ }"
+          :class="{ invalid: errors.has('password') }"
         />
-        <span class="error-msg">错误提示信息</span>
+        <span class="error-msg">{{ errors.first("password") }}</span>
       </div>
       <div class="content">
         <label>确认密码:</label>
         <input
-          type="text"
           placeholder="请输入确认密码"
           v-model="password1"
-          
+          name="password1"
+          v-validate="{ required: true, is: password }"
+          :class="{ invalid: errors.has('password1') }"
         />
-        <span class="error-msg">错误提示信息</span>
+        <span class="error-msg">{{ errors.first("password1") }}</span>
       </div>
       <div class="controls">
-        <input name="m1" type="checkbox" ref="agree" />
+        <input
+          type="checkbox"
+          v-model="agree"
+          name="agree"
+          v-validate="{ required: true, tongyi: true }"
+          :class="{ invalid: errors.has('agree') }"
+        />
         <span>同意协议并注册《尚品汇用户协议》</span>
-        <span class="error-msg">错误提示信息</span>
+        <span class="error-msg">{{ errors.first("agree") }}</span>
       </div>
       <div class="btn">
-        <button style="width: 270px; height: 36px" @click="UserRegister">
-          完成注册
-        </button>
+        <button @click="userRegister">完成注册</button>
       </div>
     </div>
 
@@ -89,62 +94,48 @@ export default {
   name: "Register",
   data() {
     return {
-      phoneNumber: "",
-      verificationCode: "",
+      // 收集表单数据--手机号
+      phone: "",
+      //验证码
+      code: "",
+      //密码
       password: "",
+      //确认密码
       password1: "",
+      //是否同意
+      agree: true,
     };
   },
   methods: {
     //获取验证码
-    async getVerificationCode(phoneNumber) {
+    async getCode() {
+      //简单判断一下---至少用数据
       try {
-        if (phoneNumber == "") {
-          alert("请填写手机号");
-        } else {
-          await this.$store.dispatch("user/getVerificationCode", phoneNumber);
-          // console.log(this.$store.state.user.verificationCode);
-          this.verificationCode = this.$store.state.user.verificationCode;
-        }
-      } catch (error) {
-        alert(error.message);
-      }
+        //如果获取到验证码
+        const { phone } = this;
+        phone && (await this.$store.dispatch("user/getVerificationCode", phone));
+        //将组件的code属性值变为仓库中验证码[验证码直接自己填写了]
+        this.code = this.$store.state.user.verificationCode;
+      } catch (error) {}
     },
-    //注册
-    async UserRegister() {
-      if (this.phoneNumber == "") {
-        alert("请填写手机号");
-        return;
-      }
-      if (this.verificationCode == "") {
-        alert("请填写验证码");
-        return;
-      }
-      if (this.password == "") {
-        alert("请填写密码");
-        return;
-      }
-      if (this.password1 == "") {
-        alert("请确认密码");
-        return;
-      }
-      if (!this.$refs.agree.checked) {
-        alert("请勾选");
-        return;
-      }
-      if (this.password != this.password1) {
-        alert("密码不一致");
-        return;
-      }
-      try {
-        await this.$store.dispatch("user/userRegister", {
-          phone: this.phoneNumber,
-          password:this.password,
-          code: this.verificationCode,
-        });
-        this.$router.push('/login')
-      } catch (error) {
-        alert(error.message);
+    //用户注册
+    async userRegister() {
+      const success = await this.$validator.validateAll();
+      //全部表单验证成功，在向服务器发请求，进行祖册
+      //只要有一个表单没有成功，不会发请求
+      if (success) {
+        try {
+          const { phone, code, password, password1 } = this;
+          await this.$store.dispatch("user/userRegister", {
+            phone,
+            code,
+            password,
+          });
+          //注册成功进行路由的跳转
+          this.$router.push("/login");
+        } catch (error) {
+          alert(error.message);
+        }
       }
     },
   },
@@ -236,6 +227,16 @@ export default {
       text-align: center;
       line-height: 36px;
       margin: 17px 0 0 55px;
+
+      button {
+        outline: none;
+        width: 270px;
+        height: 36px;
+        background: #e1251b;
+        color: #fff !important;
+        display: inline-block;
+        font-size: 16px;
+      }
     }
   }
 
@@ -253,14 +254,6 @@ export default {
         margin: 15px 0;
       }
     }
-  }
-  button {
-    outline: none;
-
-    background: #e1251b;
-    color: #fff !important;
-    display: inline-block;
-    font-size: 16px;
   }
 }
 </style>

@@ -10,6 +10,7 @@ import '@/mock/mockServe'
 import VueLazyload from 'vue-lazyload'
 import loading from '@/assets/加载.gif'
 import * as API from '@/api/index' 
+import "@/plugins/vee-validate"  //引入表单验证文件
 // console.log(API);
 import { Button, MessageBox } from 'element-ui';//按需引入
 Vue.component(Button.name, Button);
@@ -26,6 +27,7 @@ Vue.config.productionTip = false
 // reqGetSearchInfo({})
 Vue.use(VueLazyload, {
   loading: loading,
+  // 懒加载图片
 })
 Vue.use(VueRouter)
 new Vue({

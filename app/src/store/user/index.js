@@ -10,6 +10,7 @@ const actions={
     //获取验证码
     async getVerificationCode(context,phoneNumber){
         let result=await reqVerificationCode(phoneNumber)
+        // console.log(result);
         if(result.code==200){
             context.commit('GETVERIFICATIONCODE',result.data)
             return 'ok'

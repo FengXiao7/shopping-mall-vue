@@ -1,32 +1,10 @@
 # 说明：
 
-目前暂时没有使用图床上传图片，因为访问量太少，图片都存在本地，以后可能会考虑存储在图床上，但还是鼓励大家自己做笔记
+目前暂时没有使用图床上传图片，因为访问量太少，图片都存在本地，以后可能会考虑存储在图床上，但还是鼓励大家自己做笔记。
+运行的时候，经本人测试需要运行两次npm install才可以正常启动。第一次在根目录下，第二次在app下，暂时不清楚原因，也在
+网上找了很多其他方法，都不行。
 
-# app
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
+本项目视频教程：https://www.bilibili.com/video/BV1Vf4y1T7bw?p=1
 
 
 # 疑问&需要改进的地方

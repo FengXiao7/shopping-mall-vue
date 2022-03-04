@@ -1,4 +1,8 @@
-# 疑问&需要改进的地方
+# 欢迎支持原作者: 
+
+ https://www.bilibili.com/video/BV1Vf4y1T7bw?p=1
+
+# 需要注意的地方
 
 #### 1.二次封装axios
 
@@ -12,7 +16,7 @@
 
 #### 4.引用animate.css模块快速划过“全部商品”，然后停留，就鬼畜了……
 
-#### 5.Object.assign用法 
+#### 
 
 #### 6.search组件里面如果keyword面包屑和其他面包屑冲突咋办？
 
@@ -31,10 +35,6 @@
 [尚硅谷VUE项目实战，前端项目-尚品汇(大型\重磅)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Vf4y1T7bw?p=74&spm_id_from=pageDriver) 36分开始
 
 很想知道后台是如何实现的
-
-#### 12.array.forEach，array.every
-
-#### 13.trycatch
 
 #### 14.delete请求
 
@@ -78,7 +78,7 @@
 
 #### **5.search组件里,watch监听$route属性，为什么searchParams在控制台内始终显示为空？**
 
-#### 
+
 
 # 第一天
 

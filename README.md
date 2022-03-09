@@ -1,8 +1,4 @@
-# 欢迎支持原作者: 
-
- https://www.bilibili.com/video/BV1Vf4y1T7bw?p=1
-
-# 需要注意的地方
+# 疑问&需要改进的地方
 
 #### 1.二次封装axios
 
@@ -16,7 +12,7 @@
 
 #### 4.引用animate.css模块快速划过“全部商品”，然后停留，就鬼畜了……
 
-#### 
+#### 5.Object.assign用法 
 
 #### 6.search组件里面如果keyword面包屑和其他面包屑冲突咋办？
 
@@ -35,6 +31,10 @@
 [尚硅谷VUE项目实战，前端项目-尚品汇(大型\重磅)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Vf4y1T7bw?p=74&spm_id_from=pageDriver) 36分开始
 
 很想知道后台是如何实现的
+
+#### 12.array.forEach，array.every
+
+#### 13.trycatch
 
 #### 14.delete请求
 
@@ -78,7 +78,7 @@
 
 #### **5.search组件里,watch监听$route属性，为什么searchParams在控制台内始终显示为空？**
 
-
+#### 
 
 # 第一天
 
@@ -162,6 +162,8 @@ module.exports = {
 ```
 
 注意如果在css里要用到别名，要在别名前加一个~
+
+![image-20220106161006456](../../../AppData/Roaming/Typora/typora-user-images/image-20220106161006456.png)
 
 
 
@@ -603,7 +605,7 @@ export default {
 
 ##### 1.2用JS
 
-![image-20211219202934211](C:\Users\18284\AppData\Roaming\Typora\typora-user-images\image-20211219202934211.png)
+![image-20211219202934211](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202934211.png)
 
 ![image-20211219202802957](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202802957.png)
 
@@ -641,7 +643,7 @@ export default {
 
 ![image-20211220140755918](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140755918.png)
 
-![image-20211220140915519](../../../AppData/Roaming/Typora/typora-user-images/image-20211220140915519.png)
+![image-20211220140915519](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140915519.png)
 
 官方文档：[lodash.throttle | Lodash 中文文档 | Lodash 中文网 (lodashjs.com)](https://www.lodashjs.com/docs/lodash.throttle)
 
@@ -689,7 +691,7 @@ router-link是一个组件：相当于VueComponent类的实例对象。快速滑
 
 ![image-20211220152813991](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220152813991.png)
 
-![image-20211220153132429](../../../AppData/Roaming/Typora/typora-user-images/image-20211220153132429.png)
+![image-20211220153132429](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220153132429.png)
 
 由此解决了a标签的问题。
 
@@ -781,7 +783,7 @@ cnpm install --save animate.css
 import 'animate.css'
 ```
 
-![image-20211221181151770](../../../AppData/Roaming/Typora/typora-user-images/image-20211221181151770.png)
+![image-20211221181151770](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221181151770.png)
 
 #### 7.TypeNav三级联动性能优化
 
@@ -995,7 +997,7 @@ cnpm install --save swiper@5
 
 我们在ListContainer里面写好v-for,写好对应的swiper所需的必要结构，正确引入swiper
 
-![](C:\Users\18284\AppData\Roaming\Typora\typora-user-images\image-20211222161056555.png![image-20211222163254602](C:\Users\18284\AppData\Roaming\Typora\typora-user-images\image-20211222163254602.png)
+![image-20211222163254602](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222163254602.png)
 
 正确引入swiper,要引入相关js和css
 
@@ -1005,7 +1007,7 @@ cnpm install --save swiper@5
 
 具体来说是因为swiper需要等待页面结构初始化完成，才生效。但是我们有一个v-for里面在用axios获取后台数据，这就产生了问题。
 
-![1](../OneDrive/图片/屏幕快照/1.png)
+![1](https://gitee.com/feng-chengxiang/picture/raw/master/img/1.png)
 
 我们目前用两个不是很好的办法解决。
 
@@ -1142,7 +1144,7 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 ![image-20211227164829659](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227164829659.png)
 
-![image-20211227165018693](C:\Users\18284\AppData\Roaming\Typora\typora-user-images\image-20211227165018693.png)
+![image-20211227165018693](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227165018693.png)
 
 ![image-20211227165041570](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227165041570.png)
 
@@ -1656,7 +1658,7 @@ dispatch发送时机,当detail组件挂载完毕就发送
 
 解决办法：
 
-![image-20211231174230793](../../../AppData/Roaming/Typora/typora-user-images/image-20211231174230793.png)
+![image-20211231174230793](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231174230793.png)
 
 我们接着动态展示数据
 
@@ -1668,7 +1670,7 @@ dispatch发送时机,当detail组件挂载完毕就发送
 
 ![image-20220101163511645](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163511645.png)
 
-![image-20220101163607168](../../../AppData/Roaming/Typora/typora-user-images/image-20220101163607168.png)
+![image-20220101163607168](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163607168.png)
 
 v-for去取
 

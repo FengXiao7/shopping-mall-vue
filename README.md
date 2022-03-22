@@ -1,3 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+# 说明：
+
+**npm install请切换到app目录下安装**
+
+# 视频：
+
+[黑马程序员Node.js全套入门教程，nodejs最新教程含es6模块化+npm+express+webpack+promise等_Nodejs实战案例详解_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1a34y167AZ?spm_id_from=333.337.search-card.all.click)
+
+# 配套资料：
+
+尚品汇：
+
+https://gitee.com/jch1011/shangpinhui_0415.git
+
+[Swagger UI](http://39.98.123.211:8216/swagger-ui.html)
+
+
+
 # 疑问&需要改进的地方
 
 #### 1.二次封装axios
@@ -11,8 +39,6 @@
 #### 3.能自己写原生的节流和抖动
 
 #### 4.引用animate.css模块快速划过“全部商品”，然后停留，就鬼畜了……
-
-#### 5.Object.assign用法 
 
 #### 6.search组件里面如果keyword面包屑和其他面包屑冲突咋办？
 
@@ -34,8 +60,6 @@
 
 #### 12.array.forEach，array.every
 
-#### 13.trycatch
-
 #### 14.delete请求
 
 #### 15.$event,event
@@ -50,19 +74,11 @@
 
 #### 20.务必重点看看微信支付弹出二维码那一节
 
-#### 21.表格合并问题
-
-[尚硅谷VUE项目实战，前端项目-尚品汇(大型\重磅)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Vf4y1T7bw?p=103&spm_id_from=pageDriver)  32分钟
-
 #### 22.关于地址栏的问题
 
 如何防止用户通过地址栏进入不该进入的页面。见第十一天第二点bug描述
 
 #### 23.vue基础还要认真学习学习，还有很多地方不清楚原理，很多指令不知道怎么用，一定要坚持写笔记！
-
-#### 24.开发者工具教程学习
-
-### 25.vue里面插件的使用
 
 
 
@@ -72,13 +88,11 @@
 
 #### 2.关于对外暴露的问题
 
-#### 3.js新特性
-
 #### 4.节点dataset属性
 
 #### **5.search组件里,watch监听$route属性，为什么searchParams在控制台内始终显示为空？**
 
-#### 
+
 
 # 第一天
 
@@ -163,7 +177,7 @@ module.exports = {
 
 注意如果在css里要用到别名，要在别名前加一个~
 
-![image-20220106161006456](../../../AppData/Roaming/Typora/typora-user-images/image-20220106161006456.png)
+
 
 
 

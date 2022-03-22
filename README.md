@@ -224,7 +224,7 @@ const router = new VueRouter({
 
 #### 7.路由传参
 
-见C:\Users\18284\VsCode-代码\Vue_标准\代码\代码\vue_test\README.md
+
 
 简单说**params参数通过网址反映就是一连串/来传参**
 
@@ -1723,7 +1723,7 @@ v-for去取
     },
 ```
 
-这个放大器操作不是很会诶
+![image-20220319174745551](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220319174745551.png)
 
 ###### 1.9加入购物车按钮
 
@@ -2264,6 +2264,8 @@ router.beforeEach(async (to,from,next)=>{
 **注意这部分必须用老师账号登录才有数据**
 
 账号:13700000000 密码：11111111
+
+账号:我的电话 密码：123
 
 #### 	1.结算组件开发
 

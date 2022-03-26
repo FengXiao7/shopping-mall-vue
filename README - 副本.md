@@ -311,7 +311,7 @@ this.$router.push({
 
 #### 1.编程式导航路由跳转到当前路由(参数不变), 多次执行会抛出NavigationDuplicated的警告错误?
 
-![image-20211218161028743](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211218161028743.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211218161028743.png?Expires=1648294696&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=JL2RvWezM91evfWYLVVZ%2FC7y7GM%3D)
 
 注意:编程式导航（push|replace）才会有这种情况的异常，声明式导航是没有这种问题，因为声明式导航内部已经解决这种问题。
 
@@ -406,7 +406,7 @@ export default requests;
 
 在vue.config.js配置下
 
-![image-20211220133706249](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220133706249.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220133706249.png?Expires=1648294752&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=jeGIqrIRhMKUvAqGg38rfXk%2Bseo%3D)
 
 #### 6.nprogress进度条的使用
 
@@ -452,13 +452,15 @@ requests.interceptors.response.use((res)=>{
 
 这样我们每次请求开始就会有进度条，响应开始进度条就结束
 
-![image-20211218183314480](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211218183314480.png)
+
+
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211218183314480.png?Expires=1648294820&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=KWFDFnQkZSeDXJebVK8DlBZntcI%3D)
 
 ##### 6.3修改样式
 
 进度条样式可以改的，但是需要改别人的源码nprogress/nprogress.css的样式
 
-![image-20211218183849675](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211218183849675.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211218183849675.png?Expires=1648294887&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=bf65Pxjhopv8IXGk8aThsHayGv0%3D)
 
 #### 7.vuex模块使用
 
@@ -497,7 +499,7 @@ export default new Vuex.Store({
 
 ##### 7.4注册
 
-![image-20211219154829683](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219154829683.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219154829683.png?Expires=1648294932&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=xaPcVtfmbgitLFATz3QcnHhjYSI%3D)
 
 ##### 7.5模块化开发
 
@@ -575,7 +577,7 @@ export default{
 }
 ```
 
-![image-20211219180748465](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219180748465.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219180748465.png?Expires=1648295250&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=xeSvekZokHjGALvRT4%2FYy9R2C3c%3D)
 
 ##### 8.2TypeNav发出请求
 
@@ -601,7 +603,7 @@ export default {
 
 ##### 8.3用v-for改写html
 
-![image-20211219194033386](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219194033386.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219194033386.png?Expires=1648295447&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Cxrtbnlg7p6CpIGSlyfle9Wst%2FU%3D)
 
 # 第三天
 
@@ -609,29 +611,27 @@ export default {
 
 ##### 1.1用css
 
-![image-20211219195424715](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219195424715.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219195424715.png?Expires=1648295491&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=%2BeljfX%2FWR%2BHutqJ7SEmXFjBuVJg%3D)
 
 ##### 1.2用JS
 
-![image-20211219202934211](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202934211.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219202802957.png?Expires=1648295558&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=BMDz3a0XiD%2B1BxQYrci9asidnKQ%3D)
 
-![image-20211219202802957](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202802957.png)
-
-![image-20211219202852170](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202852170.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219202852170.png?Expires=1648295612&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=X3MrN1EncIUcjajOFrWYsjQtD%2BA%3D)
 
 #### 2.控制2,3级分类的显示与隐藏
 
-![image-20211219203454173](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219203454173.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219203454173.png?Expires=1648295674&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=GmijN3MkS55R7RsYNBhBgB1XB%2Bo%3D)
 
 改用js
 
-![image-20211219204057585](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219204057585.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219204057585.png?Expires=1648295716&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=018nRipzgUfWo5mjl3I9pZidl%2BE%3D)
 
 #### 3.函数抖动
 
 ##### 3.1问题
 
-![image-20211220134425799](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220134425799.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220134425799.png?Expires=1648295735&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=1Dm9lrbsxbh8CwBy5bi2YCXEdug%3D)
 
 如果业务逻辑过多，浏览器就会来不及计算，出现卡顿现象
 
@@ -643,15 +643,15 @@ export default {
 
 官方文档[lodash.debounce | Lodash 中文文档 | Lodash 中文网 (lodashjs.com)](https://www.lodashjs.com/docs/lodash.debounce)
 
-![image-20211220140023635](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140023635.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220140023635.png?Expires=1648295757&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=NQNdNctXF5ICHrzJTXM1hVHRRhg%3D)
 
 ##### 3.3节流
 
 节流：在规定的间隔时间范围内不会重复触发回调，只有大于这个时间间隔才会触发回调，把频繁触发变为少量触发
 
-![image-20211220140755918](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140755918.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220140755918.png?Expires=1648295775&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=3U4%2FtViA%2FAsYncYP%2Fzz1ZknfQAU%3D)
 
-![image-20211220140915519](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140915519.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220140915519.png?Expires=1648295795&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=k%2BHKP9XJJfO6QOZA%2BiFD2283PE0%3D)
 
 官方文档：[lodash.throttle | Lodash 中文文档 | Lodash 中文网 (lodashjs.com)](https://www.lodashjs.com/docs/lodash.throttle)
 
@@ -665,9 +665,7 @@ export default {
 
 ##### 4.2编写
 
-![image-20211220141902698](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220141902698.png)
-
-
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220141902698.png?Expires=1648295817&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=XP3DJRdEZAwJpdkWVJj%2Fq4wmiyA%3D)
 
 #### 5.三级联动路由传参到search
 
@@ -685,23 +683,23 @@ router-link是一个组件：相当于VueComponent类的实例对象。快速滑
 
 ##### 5.3编程式导航+事件委派
 
-![image-20211220143622640](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220143622640.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220143622640.png?Expires=1648295852&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=AiEfvx6gJxGJTBnFnyOA4IGZqYg%3D)
 
 但这样也有很多问题，我们一个一个解决
 
 有两个问题
 
-![image-20211220143920025](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220143920025.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220143920025.png?Expires=1648295873&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ojACcdRvB3X5oS79BoNM7e83Nqg%3D)
 
 ###### 5.3.1自定义属性解决
 
 我们给一二三级联动都加上两个自定义属性：data-categoryName和data-categoryId1(这里只演示一级的，二三级改下名字)
 
-![image-20211220152552976](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220152552976.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220152552976.png?Expires=1648295896&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=TZ2XhXXg%2BLAym6zpGHISS8u1kbo%3D)
 
-![image-20211220152813991](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220152813991.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220152813991.png?Expires=1648295915&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=qbS1KSDYHZtGYet7oRivbxhiTAM%3D)
 
-![image-20211220153132429](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220153132429.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220153132429.png?Expires=1648295940&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=v6RTKe9N05XXOQc714oJzmQ0ijk%3D)
 
 由此解决了a标签的问题。
 
@@ -737,7 +735,7 @@ router-link是一个组件：相当于VueComponent类的实例对象。快速滑
       }
 ```
 
-![image-20211220153318794](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220153318794.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220153318794.png?Expires=1648295965&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=h2LT90MMQTwk4HRJfikOR%2FsOT%2F0%3D)
 
 #### 6.为search路由组件集成TypeNav全局组件
 
@@ -745,31 +743,29 @@ router-link是一个组件：相当于VueComponent类的实例对象。快速滑
 
 ##### 6.2出现问题
 
-![image-20211221171454161](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221171454161.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221171454161.png?Expires=1648295990&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=w%2F7ZqQm799Paa2wtxp9MCiXtKkc%3D)
 
 ##### 6.3解决问题
 
 ###### 6.3.1增加show属性
 
-![image-20211221172554607](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221172554607.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221172554607.png?Expires=1648296013&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=cqbD7zWCQzNZN1ePIsTQ2C6mZjE%3D)
 
 ###### 6.3.2动态使用show
 
-![image-20211221172635590](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221172635590.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221172635590.png?Expires=1648296033&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=MSQdcR6d%2FLZEzqzVDckUiDit%2BfE%3D)
 
 这样我们的TypeNav在home里就会直接显示，在search里会隐藏
 
-![image-20211221172700558](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221172700558.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221172700558.png?Expires=1648296052&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=c6ysvT8nwo5yliKwT3Q%2Ffqxe7%2Bw%3D)
 
 ###### 6.3.3鼠标滑动移除后TypeNav隐藏问题
 
 我们希望在home里，鼠标滑动移除后TypeNav显示，而在search里的TypeNav鼠标滑动移除后隐藏
 
-![image-20211221173036873](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221173036873.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221173036873.png?Expires=1648296120&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=UfzwtA58%2BHPTqIARZJxQ3lyNLVo%3D)
 
-![image-20211221173348883](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221173348883.png)
-
-!(C:\Users\18284\AppData\Roaming\Typora\typora-user-images\image-20211221173111367.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221173348883.png?Expires=1648296140&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=87SuoFauMLCyWIZmW48sZ0qbQhI%3D)
 
 最后达成的效果就是home里的TypeNav一上来就展示，而且鼠标划出一级标题后，TypeNav不会隐藏
 
@@ -793,13 +789,13 @@ cnpm install --save animate.css
 import 'animate.css'
 ```
 
-![image-20211221181151770](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221181151770.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221181151770.png?Expires=1648296219&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=3cGFpGpHPL1E%2B4BEIaLnyg0%2FLo0%3D)
 
 #### 7.TypeNav三级联动性能优化
 
 发现一个问题来回跳转home和search组件会不断发送请求
 
-![image-20211221182215723](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221182215723.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221182215723.png?Expires=1648296242&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=JywDnzrIbjnKT5cPlaUL2mM2CmA%3D)
 
 我们把这行代码写在根组件App的mounted里就行了
 
@@ -809,9 +805,7 @@ import 'animate.css'
 
 我们希望得到的效果是这样，用户在搜索框搜索的数据(用的params)和在三级联动(用的query)中选择的数据，可以一起作为参数传过去，这就需要合并参数。
 
-![image-20211222131038188](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222131038188.png)
-
-![image-20211222131112118](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222131112118.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222131038188.png?Expires=1648296561&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=tHhKN3FnDb4g%2FSxhATSbNOgKcxM%3D)
 
 这两个if不用也行。而且注意，由于这两个location他们的name都是search，并且分别写了
 
@@ -832,7 +826,7 @@ cnpm install --save mockjs
 
 ###### 2.1.2创建文件
 
-![image-20211222135820578](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222135820578.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222135820578.png?Expires=1648296606&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=%2BqWnvZ6%2FdIQv1LFjh2nO0ww5H10%3D)
 
 ###### 2.1.3准备图片
 
@@ -864,7 +858,7 @@ main.js里面import
 
 新建文件
 
-![image-20211222142158378](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222142158378.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222142158378.png?Expires=1648296624&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=8mgJI3XrUA1JEKc7kxDxhQiT8oA%3D)
 
 ```JS
 //这个文件和request.js几乎一样，只改了baseURL和对外暴露名

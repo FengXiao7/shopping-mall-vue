@@ -1033,7 +1033,7 @@ cnpm install --save swiper@5
 
 ![image-20211222164147517](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222164147517.png)
 
-![image-20211222164555010](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222164555010.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222164555010.png?Expires=1648297388&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fEvS%2F3sAdUIzAtnygbJ0OTZcyk8%3D)
 
 #### 3.开发floor组件
 

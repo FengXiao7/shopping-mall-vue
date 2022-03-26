@@ -907,13 +907,13 @@ export const reqGetBannerList=()=>{
 
 我们在ListContainer里发送请求到仓库的服务员那里
 
-![image-20211222144601078](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222144601078.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222144601078.png?Expires=1648297049&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=cFB6kPWw5oxkFMyu4PaarVQBFfY%3D)
 
 在仓库里写好对应的函数名
 
-![image-20211222144706652](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222144706652.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222144706652.png?Expires=1648297069&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=63sXeuqegWpQSsXRHmUu%2BvaNHGc%3D)
 
-![image-20211222144801914](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222144801914.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222144801914.png?Expires=1648297102&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=L2inpGF1Ddr40dHMmcrxzNa0840%3D)
 
 接下来，我们和以前一样把vuex完善好，最好不要忘记使用mapState取出来，这部分就不截图了，和以前一样的
 
@@ -989,7 +989,7 @@ export const reqGetBannerList=()=>{
 
 
 
-![image-20211222180754841](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222180754841.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222180754841.png?Expires=1648297149&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=q04q9tDA3xBML5Dbp8L7VOZkefI%3D)
 
 也就是说第一个参数也可以是真实dom
 
@@ -1001,17 +1001,17 @@ cnpm install --save swiper@5
 
 我们在ListContainer里面写好v-for,写好对应的swiper所需的必要结构，正确引入swiper
 
-![image-20211222163254602](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222163254602.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222163254602.png?Expires=1648297168&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=1sVTegG6uGA59Za1ylcvaFEnHGg%3D)
 
 正确引入swiper,要引入相关js和css
 
-![image-20211222161345749](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222161345749.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222161345749.png?Expires=1648297183&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=U3B7TsNFrRSww7xpDijJf8heC8Y%3D)
 
 在写必要的swiper js代码时，遇见了一个问题，不知道在什么时机写，因为涉及到异步请求数据和v-for遍历数据的问题。
 
 具体来说是因为swiper需要等待页面结构初始化完成，才生效。但是我们有一个v-for里面在用axios获取后台数据，这就产生了问题。
 
-![1](https://gitee.com/feng-chengxiang/picture/raw/master/img/1.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/1.png)
 
 我们目前用两个不是很好的办法解决。
 
@@ -1025,15 +1025,15 @@ cnpm install --save swiper@5
 
 使用watch只能保证数据由空变化到有数组，但不能保证v-for执行完了
 
-![image-20211222164147517](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222164147517.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222164147517.png?Expires=1648297238&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ZVsNOqovlpwk0JnPBGjrY8AYlLk%3D)
 
-![image-20211222164555010](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222164555010.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222164555010.png?Expires=1648297388&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fEvS%2F3sAdUIzAtnygbJ0OTZcyk8%3D)
 
 #### 3.开发floor组件
 
 和开发ListContainer组件差不多，也是使用mockjs请求假数据，然后vuex。这里有个不同的地方，就是我们发给仓库服务员dispatch的方法要写在home组件里不能写在floor组件里，因为我们用了两次floor组件。然后我们mockjs里面也是传的两套结构一样内容不一样的json，所以在home使用floor组件时用v-for遍历，再使用props传递参数给子组件floor，以便于后续操作。
 
-![image-20211222173101914](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222173101914.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222173101914.png?Expires=1648297422&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=atz7z%2BQsXnlkcUBs83zsGKavPj4%3D)
 
 ###### 3.1动态展示数据
 
@@ -1041,25 +1041,25 @@ cnpm install --save swiper@5
 
 我们都是通过父组件穿给我们的list也就是props属性来收数据
 
-![image-20211222181314560](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222181314560.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222181314560.png?Expires=1648297444&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=nwnq8AkTST%2F0RUEsLZ540FG4UiI%3D)
 
-![image-20211222181517415](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222181517415.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222181517415.png?Expires=1648297465&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=n%2BdckQ0%2FL0fYwF%2FjIHPX8hAWyeA%3D)
 
 原因是因为，我们是通过props来接收数据的，这和以前不同，swiper需要的结构一定是建立好了的，所以可以直接卸载mouted里，不用像以前用watch+$nextTick的方式
 
-![image-20211222182906298](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222182906298.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222182906298.png?Expires=1648297481&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=PlzqZZJkJZ8nj%2Bb%2FElAyehILs5U%3D)
 
-![image-20211222182953028](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222182953028.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222182953028.png?Expires=1648297499&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=YmwSQdJO%2FUrQZY6P3lgAS%2BR1WIg%3D)
 
 #### 4.提取出公共的轮播图组件
 
 我们发现在ListContainer和floor中都会用到轮播图，于是我们把它抽取出来做成一个公共组件。注意红字部分
 
-![image-20211223153340175](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211223153340175.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211223153340175.png?Expires=1648297520&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=qDH7WNRaT7nJ6j43%2FmqNlEc0Q24%3D)
 
-![image-20211223154000264](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211223154000264.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211223154000264.png?Expires=1648297537&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=FSt7bxzWEUB019FYDYh8XIK5pMk%3D)
 
-![image-20211223154049637](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211223154049637.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211223154049637.png?Expires=1648297556&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=kveGYh902Sv55aLGzuPAwgqo%2Bwk%3D)
 
 # 第五天
 
@@ -1116,9 +1116,9 @@ const getters={
 
 ###### 1.5注意事项
 
-![image-20211224175130576](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211224175130576.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211224175130576.png?Expires=1648297575&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=APY1tdwBPiHnffq8OIZYCMJU1Pg%3D)
 
-![image-20211224175252209](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211224175252209.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211224175252209.png?Expires=1648297594&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=nP8rjk9ADL3PdoFhTM%2FKgfmaqA4%3D)
 
 Object.assign:这个就是把this.$route.query和this.$route.params的键值对转到this.searchParams上
 
@@ -1134,9 +1134,9 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 我们之前写的只能发送1次请求，但是我们的参数是在动态发生变化的，这部分逻辑见**第四天第一点**
 
-![image-20211224182706156](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211224182706156.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211224182706156.png?Expires=1648297614&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=mXRbfH6n9yXl122VoXIVgAl9lJw%3D)
 
-![image-20211225013404843](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211225013404843.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211225013404843.png?Expires=1648297631&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=d7in%2BrvJGD3yfzCMgsoFOBFSk2w%3D)
 
 注意请求发完以后，一定要把3个商品ID清空，防止出现这种情况：用户第一次点击一个一级联动，正确返回结果：如果用户再点击一个二级联动，那么searchParms里上一次的categoryId1就还存在，这一次的categoryId2也存在，这显然是一种错误的情况。我们在这里清空后，具体工作流程是这样的：
 
@@ -1146,47 +1146,47 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 就是这个东西
 
-![image-20211227164829659](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227164829659.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227164829659.png?Expires=1648297647&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=PAo8HE8FE8T4DOUVJT6G3Ei0CTI%3D)
 
-![image-20211227165018693](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227165018693.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227165018693.png?Expires=1648297662&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=YP7FAc6soljW06K0iiEo6%2Fj4uV4%3D)
 
-![image-20211227165041570](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227165041570.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227165041570.png?Expires=1648297678&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=D8g2GcjF8z6PXhf20BtCQ3QtzeM%3D)
 
 这里我们还可以顺便改变地址栏
 
-![image-20211227170527506](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227170527506.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227170527506.png?Expires=1648297692&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=dfoFUFqb6o8NPPV%2B%2BXVd%2BOzlLD4%3D)
 
 #### 3.关键字面包屑
 
 这个地方大部分和分类面包屑一样
 
-![image-20211227171716781](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227171716781.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227171716781.png?Expires=1648297710&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=SFUwuQZT6MywxXR%2F79mMw2kaaJ0%3D)
 
-![image-20211227171742927](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227171742927.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227171742927.png?Expires=1648297726&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=GbZpAeycUCrVz4%2Fb%2BIMFW%2FXpqec%3D)
 
 但是我们还想加一个需求，就是用户点击删除关键字后，搜索框里的内容置空。这就涉及到serach组件与header组件两个兄弟组件之间的通讯，这里我们使用全局事件总线$bus解决
 
 ###### 3.1注册全局事件总线
 
-![image-20211227172137094](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227172137094.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227172137094.png?Expires=1648297742&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=sR%2FfnC88oU05T59kNaqtUEFzPns%3D)
 
 ###### 3.2使用$bus
 
 在search组件里
 
-![image-20211227174555719](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227174555719.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227174555719.png?Expires=1648297757&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=S3mkt88mdU7E37vi2ibUC833PJY%3D)
 
 在header组件里
 
-![image-20211227174624703](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227174624703.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227174624703.png?Expires=1648297773&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fm0jQ5GJ3LyfRvcGLBprePTooJI%3D)
 
 在header组件里
 
-![image-20211227181534064](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227181534064.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227181534064.png?Expires=1648297788&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fEjR%2BakI5H17m3mS5JFIs6zfMJE%3D)
 
 最后我们像在分类面包屑一样，处理下地址栏就行了
 
-![image-20211227182022187](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227182022187.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227182022187.png?Expires=1648297805&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=VHZTIMDVdonu2IcyCAeeu%2BRnN6Q%3D)
 
 #### 4.点击品牌重发请求
 
@@ -1194,37 +1194,37 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 ###### 4.1绑定单击事件
 
-![image-20211229143246598](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143246598.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143246598.png?Expires=1648297828&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=yi4VsXWT6qNejl9UcgnWJ50tmWo%3D)
 
 ###### 4.2子向父传数据
 
-![image-20211229143343963](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143343963.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143343963.png?Expires=1648297848&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=v3vJip0u%2BQr%2FEN1%2BYVfxuqvobMY%3D)
 
 父组件触发回调
 
-![image-20211229143419059](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143419059.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143419059.png?Expires=1648297865&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Nw3oSXyoNaWvzAeskVVDnNZ0%2B7g%3D)
 
-![image-20211229143446843](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143446843.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143446843.png?Expires=1648297880&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=9hgAmWc7RA1lITI0zFNdg12vhCo%3D)
 
 演示
 
-![image-20211229143547513](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143547513.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143547513.png?Expires=1648297898&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=W5s1VYxA5Ke1fL539F7zUHuDfNw%3D)
 
 ###### 4.3父组件发送请求
 
 格式
 
-![image-20211229143946008](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143946008.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143946008.png?Expires=1648297915&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ogyvTl7gkRSxeVDMRgECG79PXDo%3D)
 
 整理参数
 
-![image-20211229144957978](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229144957978.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229144957978.png?Expires=1648297930&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=uJ%2BGKRydAfI1AgCN5nSdrBieg3Y%3D)
 
 处理品牌面包屑
 
-![image-20211229145053245](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229145053245.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229145053245.png?Expires=1648297948&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=eMB09geqCzzdoivvh742f3H3Oz4%3D)
 
-![image-20211229145114279](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229145114279.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229145114279.png?Expires=1648297963&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=skODKzVSAbEdmqU1SEKJXMANTFw%3D)
 
 品牌面包屑必须用v-if不用v-show。原因:删除品牌后trademark是undefined，而undefined肯定不能split进行分割。所以这段逻辑直接v-if不予渲染代码，v-show虽然也能不进行展示，但是代码还是存在会报错。因为v-show只是display:none
 
@@ -1234,41 +1234,41 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 接口格式
 
-![image-20211229150240663](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150240663.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150240663.png?Expires=1648297978&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=MwbKQ9zeLzwX70oYNZ9E71J0Ux4%3D)
 
-![image-20211229150416923](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150416923.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150416923.png?Expires=1648297993&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=LeHamSqu8PoO9JSir2CBK8ib%2BhQ%3D)
 
 代码查看3个参数
 
-![image-20211229150929348](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150929348.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150929348.png?Expires=1648298008&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=9MqPG7%2B1y3WBlyrBHQSznvcAa00%3D)
 
-![image-20211229150949383](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150949383.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150949383.png?Expires=1648298025&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=sdn5PCbIDpezdeLdADkww%2BqCX5w%3D)
 
-![image-20211229151022272](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229151022272.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229151022272.png?Expires=1648298045&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=OYRvdzQCXhQy9TlrgCZSOd42e9w%3D)
 
 ###### 5.2传参
 
 这个地方和4.1大体一样也是用自定义事件的方法传参，这里我就只展示父组件search自定义事件的回调了
 
-![image-20211229153018651](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229153018651.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229153018651.png?Expires=1648298065&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=XYvy0LEN9lJ9%2FnR0lymndq2dR3M%3D)
 
 ###### 5.3面包屑处理
 
 
 
-![image-20211229155122579](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155122579.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155122579.png?Expires=1648298080&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Fj5AEjt%2F7PIL7%2BiMfV0YFr103uk%3D)
 
 测试时发现错误
 
 props数组不能有重复元素
 
-![image-20211229155208324](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155208324.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155208324.png?Expires=1648298095&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=5mkqgLk2At5EluqSURQKJdyDvm4%3D)
 
-![image-20211229155229103](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155229103.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155229103.png?Expires=1648298110&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=WmhJ9tJiZUPE0CwD8vg2YuBVy74%3D)
 
 又发现一个错误，删除分类面包屑之后也要把，售卖属性和品牌置空。这样更符合逻辑
 
-![image-20211229155630653](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155630653.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155630653.png?Expires=1648298126&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=LFOREiX1XsVPKDF1TPzjupEktfY%3D)
 
 # 第六天
 
@@ -1276,7 +1276,7 @@ props数组不能有重复元素
 
 ###### 1.1参数
 
-![image-20211229163344499](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229163344499.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229163344499.png?Expires=1648298142&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=dxPWF0VMB2Sxu%2FhDfDjzBe5MWhA%3D)
 
 也就是说总共只有4种：
 
@@ -1284,9 +1284,9 @@ props数组不能有重复元素
 
 ###### 1.2优化显示
 
-![image-20211229165820913](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229165820913.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229165820913.png?Expires=1648298163&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=KzaocDCuNz9%2BbLjTktiRbQ3gw3w%3D)
 
-![image-20211229165856671](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229165856671.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229165856671.png?Expires=1648298177&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=9x3Fj%2FE0UK0ht8p7d9yq3hF2rMg%3D)
 
 接下来我们优化下箭头样式，在阿里图标里面找
 
@@ -1294,9 +1294,9 @@ props数组不能有重复元素
 
 [尚硅谷VUE项目实战，前端项目-尚品汇(大型\重磅)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Vf4y1T7bw?p=50&spm_id_from=pageDriver)24分10秒
 
-![image-20211229171944987](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229171944987.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229171944987.png?Expires=1648298198&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=IRHiKGuvXXGHZ0%2FJrqeTZ91gJHA%3D)
 
-![image-20211229172014442](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229172014442.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229172014442.png?Expires=1648298214&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=TIViFHZQhinJFZGdQAoKiptEGQk%3D)
 
 isOne判断order里面有无1，如果有那么就是综合可以给综合添加背景色，综合的箭头也可以显示，isTwo同理
 
@@ -1304,9 +1304,9 @@ isAsc判断order里面有无asd，如果有那么就是升序，对应箭头显�
 
 ###### 1.3点击综合或价格可触发请求
 
-![image-20211229175340621](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229175340621.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229175340621.png?Expires=1648298229&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Z84rbBIHqBKPeaqDF6DdvmMCd2c%3D)
 
-![image-20211229175400389](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229175400389.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229175400389.png?Expires=1648298245&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=9bjYwLlQF%2BXNUn7OB2AkdDyY8nk%3D)
 
 #### 2.分页器
 
@@ -1398,7 +1398,7 @@ continues:代表分页连续页码个数
 
 ###### 2.1分页器参数计算
 
-![image-20211230163024204](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230163024204.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230163024204.png?Expires=1648298264&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=NCL2mbapdoRgnnNKETLWWb74dUA%3D)
 
 子组件计算参数步骤:(父子组件通过props传参数)
 
@@ -1442,7 +1442,7 @@ continues:代表分页连续页码个数
 
 ###### 2.2动态展示分页器
 
-![image-20211230165825517](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230165825517.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230165825517.png?Expires=1648298281&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=1KYYVrqajDrTOnOy2CjAH%2BNsPPc%3D)
 
 ###### 2.3发送请求
 
@@ -1450,13 +1450,13 @@ continues:代表分页连续页码个数
 
 父组件search里
 
-![image-20211230180215720](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230180215720.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230180215720.png?Expires=1648298300&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=l0l07LhzHVcKWDlVJUbPTvbo8PU%3D)
 
-![image-20211230180324351](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230180324351.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230180324351.png?Expires=1648298316&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=7uzf%2B1O4vA0oFO6dGXLIhbV%2F1Eg%3D)
 
 子组件全局分页组件里
 
-![image-20211230180630347](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230180630347.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230180630347.png?Expires=1648298329&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=jzWsiRPqLEV1cX9nNrgodbJZNXA%3D)
 
 完整代码
 
@@ -1590,19 +1590,19 @@ export default {
 
 ###### 1.1路由相关
 
-![image-20211231163320496](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231163320496.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231163320496.png?Expires=1648298350&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=2qZVyBHDJl4cH34CokaT1ac9GWg%3D)
 
 我们希望点击search组件的商品图片可以跳转到详情页，为此必须传参(用params参数)，所以要加一个占位符
 
-![image-20211231163521516](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231163521516.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231163521516.png?Expires=1648298372&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=YbtiAVMvnjBhiFAM2FD07Jef7NU%3D)
 
 使用的时候声明式导航就可以了
 
 我们发现路由信息太多把它拆分出去
 
-![image-20211231164112738](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231164112738.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231164112738.png?Expires=1648298426&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=8F9L44vvROhMB36R2SGyXLTZne8%3D)
 
-![image-20211231164142175](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231164142175.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231164142175.png?Expires=1648298441&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=87Vg67JeGwnyxfkVnjr9HbbZNjA%3D)
 
 ###### 1.2滚动行为
 
@@ -1618,89 +1618,89 @@ export default {
 
 接口文档
 
-![image-20211231165745096](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231165745096.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231165745096.png?Expires=1648298457&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=iC5AasNaD1gSEm1cjPtBo1LZ8j8%3D)
 
 添加api
 
-![image-20211231170112001](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231170112001.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231170112001.png?Expires=1648298472&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=13Q1fg4ujPLBCKWYq7W4UZEcBeM%3D)
 
 vuex三件套
 
-![image-20211231170824906](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231170824906.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231170824906.png?Expires=1648298488&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=N4A4itShmFj5epRvptaThaWoJws%3D)
 
 小仓库
 
-![image-20211231170850389](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231170850389.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231170850389.png?Expires=1648298501&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ZQCrBfXN%2FJKCPGnDEgsLDI5jj48%3D)
 
 dispatch发送时机,当detail组件挂载完毕就发送
 
-![image-20211231171643078](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231171643078.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231171643078.png?Expires=1648298517&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ZEy4%2FaMnVCxc7WuHRW3lqJORbzI%3D)
 
 ###### 1.4分析detail组件结构
 
-![image-20211231172244724](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231172244724.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231172244724.png?Expires=1648298534&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=nQXFMIQ6Wn34aOipPzEIpwIcFeg%3D)
 
-![image-20211231172604395](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231172604395.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231172604395.png?Expires=1648298549&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=WbooFxrsj8xWZmHuucfj0bV4P2I%3D)
 
 ###### 1.5动态展示数据
 
 我们用getters简化仓库数据
 
-![image-20211231173848766](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173848766.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173848766.png?Expires=1648298570&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Xo%2F3Hzx2UY3Ms7dOdaLjJbaYoSo%3D)
 
 使用
 
-![image-20211231173917713](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173917713.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173917713.png?Expires=1648298601&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=hEDBUXsHHZT1xsrCs2rUNDBV69U%3D)
 
-![image-20211231173945245](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173945245.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173945245.png?Expires=1648298634&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=EVIG2Sr2gyKB22m48Z0TgRLmCKs%3D)
 
 发现报错
 
-![image-20211231173816259](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173816259.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173816259.png?Expires=1648298649&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=dNXhHnts%2FGTf%2BHOYqukPLL6x6m0%3D)
 
 原因是因为我们的getters写的还不够完善.当服务器数据还没传过来时，categoryView是undefine，取categoryView里面的category1Name这些数据时自然就报错了，但是当后面服务器数据传过来时，就没这个问题了。所以说这个报错是一个假报错
 
 解决办法：
 
-![image-20211231174230793](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231174230793.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231174230793.png?Expires=1648298664&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=S21WOlFoomD1deGlAPDCX3K0ZAM%3D)
 
 我们接着动态展示数据
 
 在放大镜效果这里，我们需要把skuInfo.skuImageList的数据传给子组件
 
-![image-20211231181146948](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231181146948.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231181146948.png?Expires=1648298678&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=0Di67nLnsY%2B5esV%2F7n%2Bj5FzJPBs%3D)
 
 ###### 1.6售卖属性展示
 
-![image-20220101163511645](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163511645.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163511645.png?Expires=1648298693&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=jl06pXXJmWbx0MGkci17W5hKdSw%3D)
 
-![image-20220101163607168](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163607168.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163607168.png?Expires=1648298707&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=svaj%2FmWrJ%2BIZYWt%2B0h6ExXJRARc%3D)
 
 v-for去取
 
-![image-20220101163732360](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163732360.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163732360.png?Expires=1648298722&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=t253HrhZY5JGNr9q5zu8QxHHlrU%3D)
 
-![image-20220101163753423](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163753423.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163753423.png?Expires=1648298736&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=A9XfdkOb90cNRLICtm%2BZQ0jcscY%3D)
 
 ###### 1.7放大镜和轮播图图片处理
 
-![image-20220101171004252](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171004252.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171004252.png?Expires=1648298750&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Ir9NkTFI%2FQaDiWI%2BFEXzhwS53uw%3D)
 
 我们使用swiper，并让其一次展示3张图
 
-![image-20220101171103542](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171103542.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171103542.png?Expires=1648298767&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=9OR0OEzXJLh4hT92n7al5heFC2Q%3D)
 
 需求：点击轮播图小图，放大镜展示。
 
 由于轮播图ImageList组件和放大镜Zoom组件是兄弟组件，我们用全局时间总线解决
 
-![image-20220101171327483](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171327483.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171327483.png?Expires=1648298783&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=zCcQz40eo5asXnTlI%2Fc2zPvngzQ%3D)
 
-![image-20220101171354501](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171354501.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171354501.png?Expires=1648298801&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=FRC%2BudnjR9Lg4GwZtaV7jqmi59E%3D)
 
 ###### 1.8实现放大镜
 
-![image-20220101174705508](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101174705508.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101174705508.png?Expires=1648298818&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=KV0vzJ%2Biqq89cY07W7VNNbJezG0%3D)
 
 完整代码
 
@@ -1727,17 +1727,17 @@ v-for去取
     },
 ```
 
-![image-20220319174745551](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220319174745551.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220319174745551.png?Expires=1648298836&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=nEFgjnhvJ3JQtSQWndpNz%2F0iqRc%3D)
 
 ###### 1.9加入购物车按钮
 
-![image-20220101175544481](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101175544481.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101175544481.png?Expires=1648298850&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=YtJohTqZk3HAi5qedeKUTnCnJAQ%3D)
 
-![image-20220101181150297](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101181150297.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101181150297.png?Expires=1648298865&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fOS%2Fsi%2F21cUj24FNY7CRGsAb%2B3A%3D)
 
-![image-20220101181212456](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101181212456.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101181212456.png?Expires=1648298878&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=palw9%2FELJ6HEcAaR7Rql875luLE%3D)
 
-![image-20220101181226806](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101181226806.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101181226806.png?Expires=1648298894&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=8Q3x%2B%2B0qvcbY4modMBNA6rFPOiI%3D)
 
 #### 2.添加购物车相关
 
@@ -1745,15 +1745,15 @@ v-for去取
 
 ###### 2.1将购物车数据写入服务器
 
-![image-20220102150344398](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102150344398.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102150344398.png?Expires=1648298911&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=5PF3FsmUhxkF3HmcX10lGt0wQas%3D)
 
-![image-20220102152916614](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102152916614.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102152916614.png?Expires=1648298926&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ppk5cWFW9eHSgNcPAgzCQAMi7LE%3D)
 
-![image-20220102152938863](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102152938863.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102152938863.png?Expires=1648298943&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=1w%2FlaD%2FJdzbMR%2Ba3s5%2FMhZqDWeA%3D)
 
-![image-20220102153002164](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102153002164.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102153002164.png?Expires=1648298962&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=LvzyWbt%2B9paxlp4E9CrEqZkxbbE%3D)
 
-![image-20220102153129510](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102153129510.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102153129510.png?Expires=1648298977&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=uzOmdaqEI5k0u60ttGrlBw2FcAc%3D)
 
 ###### 2.2判断写入服务器是否成功
 
@@ -1767,21 +1767,21 @@ v-for去取
 
 actions
 
-![image-20220102162548116](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102162548116.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102162548116.png?Expires=1648298996&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ZTJj%2BPlbbLqSgSqmyAD6c7Yf8ZU%3D)
 
 detail组件
 
-![image-20220102162622501](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102162622501.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102162622501.png?Expires=1648299010&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=f8FufGeGFAeuPl8dlz7V%2Bex24gA%3D)
 
 ###### 2.3添加购物车成功路由
 
 组件老师已写好，注册使用即可
 
-![image-20220102163355449](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102163355449.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102163355449.png?Expires=1648299025&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=IS1WzkU%2BNDDCYVfKs10f4TIYi%2BM%3D)
 
 
 
-![image-20220102163331390](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102163331390.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102163331390.png?Expires=1648299058&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=qR%2Fd8k28WK0%2FXMMN84xDkOTjIgw%3D)
 
 ###### 2.4传递参数给AddCartSuccess组件
 
@@ -1797,19 +1797,19 @@ detail组件
 
 Detail组件
 
-![image-20220102165651142](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102165651142.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102165651142.png?Expires=1648299073&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=m%2BEOE3X0AzmdsHz6IUFNBZ%2FhnT4%3D)
 
 AddCartSuccess组件
 
-![image-20220102165726454](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102165726454.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102165726454.png?Expires=1648299087&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=9gM%2Bfvo5q2xheXTRaDUhDSJYf2A%3D)
 
 接下来就把computed里的数据动态展示就行了
 
-![image-20220102170322230](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102170322230.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102170322230.png?Expires=1648299100&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=EAlG%2Ff0dwIhCbxVqSXZ4qN1BhzQ%3D)
 
 效果
 
-![image-20220102170340425](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102170340425.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102170340425.png?Expires=1648299118&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=W5k%2Bp5yA1egok07YeQVHw1W8kaE%3D)
 
 ###### 2.5实现跳转回产品详情页的功能
 
@@ -1817,7 +1817,7 @@ AddCartSuccess组件
 
 AddCartSuccess组件
 
-![image-20220102171123483](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102171123483.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102171123483.png?Expires=1648299132&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=OvMfwcHpyEOtWNyZcD3noKhLYw4%3D)
 
 ###### 2.6实现跳转到购物车功能
 
@@ -1829,29 +1829,29 @@ AddCartSuccess组件
 
 ###### 1.1接口
 
-![image-20220102173139793](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102173139793.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102173139793.png?Expires=1648299146&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=K0bgckiZO9Es%2BMY4Ezk35REb7o0%3D)
 
-![image-20220102175517153](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175517153.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175517153.png?Expires=1648299160&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=%2BdDPHbqlDq9nbhPL7k1HVAbf%2B5k%3D)
 
-![image-20220102175611406](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175611406.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175611406.png?Expires=1648299175&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=6rPHzpDQv54XsEr4KHxS5o%2Fh%2FcM%3D)
 
 shopCart组件
 
-![image-20220102175637514](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175637514.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175637514.png?Expires=1648299188&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=4ESuulwLp5v%2F0y6ObptbelpMq3g%3D)
 
-![image-20220102175913797](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175913797.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175913797.png?Expires=1648299202&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=YWEDthrvKtwWcljjwUGqMpIu5uk%3D)
 
 ###### 1.2游客UUID
 
-![image-20220102181802267](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102181802267.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102181802267.png?Expires=1648299215&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=E1xwLTFMfXJLTlnNN%2FZFpH7mjs0%3D)
 
 在store/detail/index.vue  也就是小仓库下调用
 
-![image-20220102181903741](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102181903741.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102181903741.png?Expires=1648299232&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=9sIYNye49iD%2FH2rcaR05aO7ULvA%3D)
 
 把这个uuid_token写在响应头里，要和后台商量好
 
-![image-20220102182024739](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102182024739.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102182024739.png?Expires=1648299246&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=%2Fa7N%2BtbkwE8vVZbjgPAxV%2FtRsec%3D)
 
 带上uuid后，便可正常获取购物车数据
 
@@ -1859,13 +1859,13 @@ shopCart组件
 
 actions里result格式
 
-![image-20220103155522438](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103155522438.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103155522438.png?Expires=1648299262&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=WJIknTOn575Dd5ipQPmT2HUKlg0%3D)
 
-![image-20220103162524485](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103162524485.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103162524485.png?Expires=1648299281&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Cx6NrRGMlDjFs%2FoikKgdj%2Bp0nRY%3D)
 
 使用
 
-![image-20220103162548358](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103162548358.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103162548358.png?Expires=1648299296&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ox5nMXySMUUVvql9TQZe6Lg07vk%3D)
 
 ###### 1.4动态展示数据
 
@@ -1875,17 +1875,17 @@ actions里result格式
 
 用户每次在购物车里增加，减少或者直接修改产品数我们都要向后台发送请求，这个请求我们已经写了
 
-![image-20220103163748959](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103163748959.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103163748959.png?Expires=1648299312&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=k%2FfJkWA14IBDQQKgx3Eopgc%2FSJc%3D)
 
 注意skuNum参数是新的产品数-原来产品数。比如以前是4台手机，新的是7台，那么skuNum就是3；再比如以前是4台，新的是2台，那么skuNum就是-2
 
-![image-20220103164020891](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103164020891.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103164020891.png?Expires=1648299326&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=RtZhyG9IvFtJ5%2Bjy8MIBR1YigiI%3D)
 
-![image-20220103163611305](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103163611305.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103163611305.png?Expires=1648299340&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=mrds28Ci22rDPY8039Wp2xG%2BpJ8%3D)
 
 (这个地方如果我们购买同一产品，后台会自动加上产品数的)
 
-![image-20220103180433397](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103180433397.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103180433397.png?Expires=1648299355&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=772JDyYYp4csvnfaeSqFVxRKCYc%3D)
 
 ```JS
   //改变产品数量
@@ -1931,45 +1931,45 @@ actions里result格式
 
 ###### 1.6删除购物车商品
 
-![image-20220105161114447](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105161114447.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105161114447.png?Expires=1648299370&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=bAe2oxT7ijFhfKQtd7dI9aFvea4%3D)
 
 接口
 
-![image-20220105153705806](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105153705806.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105153705806.png?Expires=1648299383&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=xyhSCwwMzWorluCWqUHqumnfrtA%3D)
 
 api
 
-![image-20220105155731859](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105155731859.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105155731859.png?Expires=1648299398&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=uLXa6CM3jenemnZlyxfcggfa6Gg%3D)
 
 vuex
 
-![image-20220105155747890](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105155747890.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105155747890.png?Expires=1648299412&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=96C9Jib08YEVtcwlL0SQ95edGZg%3D)
 
 使用
 
-![image-20220105155805499](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105155805499.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105155805499.png?Expires=1648299426&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=LD%2FYBvdJCEnmkx2Gn3Q2X%2BOwPIs%3D)
 
 1.7修改购物车商品状态
 
-![image-20220105161044457](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105161044457.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105161044457.png?Expires=1648299440&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=2Wudmsp7LXifweIzmxQXhsLF9NM%3D)
 
 接口
 
-![image-20220105161005273](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105161005273.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105161005273.png?Expires=1648299454&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=EED3RLq33MlSIo%2FuAvczOE2KQlo%3D)
 
 api
 
-![image-20220105163935345](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105163935345.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105163935345.png?Expires=1648299474&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=4ez7OWW6TfNc8k4RzREU5n%2Fe2AQ%3D)
 
 vuex
 
-![image-20220105164024479](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105164024479.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105164024479.png?Expires=1648299499&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=x29zgMT8BS%2FF6JpAXzAzJ9JnSoo%3D)
 
 使用
 
-![image-20220105164049434](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105164049434.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105164049434.png?Expires=1648299514&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=X8n0eiQK7nH4UxVOg3mNtDPgHm0%3D)
 
-![image-20220105164105830](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105164105830.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105164105830.png?Expires=1648299533&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=VpiJjv2ecaayNZV8BZ8zrsQxZco%3D)
 
 ###### 1.7删除所选商品
 
@@ -1977,7 +1977,7 @@ vuex
 
 使用
 
-![image-20220105172915858](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105172915858.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105172915858.png?Expires=1648299556&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=nWxf2ggCQx%2FDXzULWE9pbgzfiv8%3D)
 
 vuex
 
@@ -2004,19 +2004,19 @@ vuex
 
 
 
-![image-20220106154627420](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154627420.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154627420.png?Expires=1648299570&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=KK2qBeXBRhpYzjfEWaXjrgGg1tk%3D)
 
 使用
 
-![image-20220106154851186](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154851186.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154851186.png?Expires=1648299586&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=w92RTVDOg%2BzemhHdIkgVNlTxxHg%3D)
 
 注意如果没有购物车没有商品，全选按钮会有bug
 
-![image-20220106154738267](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154738267.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154738267.png?Expires=1648299601&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=PMnKTQ2YFfBCpOFclW2sQ0UGmbQ%3D)
 
-![image-20220106154716673](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154716673.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154716673.png?Expires=1648299615&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=3fC3HXMcrtcP1zAGblHYgtUvGQw%3D)
 
-![image-20220106154819406](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154819406.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154819406.png?Expires=1648299631&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=K0BVCeO%2BfW7o0zbRO8ZxeTtsdmc%3D)
 
 # 第九天
 
@@ -2026,45 +2026,45 @@ vuex
 
 登录注册组件老师已写好，直接引用。注意引用照片路径问题，在css使用别名要加一个~
 
-![image-20220106165408784](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106165408784.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106165408784.png?Expires=1648299646&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Hboq8jUa9dIW7MxuH68rgXgU%2Fn4%3D)
 
 ###### 1.1验证码
 
 接口
 
-![image-20220106165456512](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106165456512.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106165456512.png?Expires=1648299660&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=rvieaxot%2F7fj67tv1rzWsqjF9Uk%3D)
 
 api
 
-![image-20220106173500934](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173500934.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173500934.png?Expires=1648299675&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=QwIKmgjCCaeqoaTHvNw2bX44zKU%3D)
 
 vuex三连环
 
 我们把登录注册业务再注册一个小仓库
 
-![image-20220106173324141](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173324141.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173324141.png?Expires=1648299688&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=wWeArs3ZGBK1YQCMzeV%2B9SaUGhA%3D)
 
 使用
 
-![image-20220106173418178](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173418178.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173418178.png?Expires=1648299708&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=2aZp0xYGL6YEcHB87INEP3CWvCY%3D)
 
 ###### 1.2完成注册
 
 接口
 
-![image-20220106173624000](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173624000.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173624000.png?Expires=1648299723&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=GggGQ3mLw8xyfvbuMUagte33TrY%3D)
 
 api
 
-![image-20220106173852297](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173852297.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173852297.png?Expires=1648299738&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=n8%2FFwILDX9CrPKn3ytp4L0vvAcQ%3D)
 
 vuex
 
-![image-20220107154750563](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107154750563.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107154750563.png?Expires=1648299751&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=PZiCs22Y1tznVkMIUYGI0CZuls4%3D)
 
 使用
 
-![image-20220107154824298](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107154824298.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107154824298.png?Expires=1648299765&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=NesspccAWyV4AtF3eW0CY%2Bxdmcc%3D)
 
 注册完毕记得跳转路由，目前还只是做了一半，还没有做验证。最后一天做
 
@@ -2072,29 +2072,29 @@ vuex
 
 接口
 
-![image-20220107163629177](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107163629177.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107163629177.png?Expires=1648299780&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=CMCQxXayqrdSumlyrvGCaKf63vM%3D)
 
 api
 
-![image-20220107163715332](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107163715332.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107163715332.png?Expires=1648299793&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=L913tOkoXw2nUvg7s7vemls%2BxEM%3D)
 
 vuex（这次要存token）
 
-![2](https://gitee.com/feng-chengxiang/picture/raw/master/img/2.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/2.png?Expires=1648299815&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Ag2g9LRTIanLANuXrefRphqw6DQ%3D)
 
 token一般来说就是识别用户的唯一标志符，我们注册成功后后台会为我们的账号添加一个token。在前台我们想要获取特定用户的信息往往只需要向后台发出token就可以了。本质上token和我们项目里的uuid功能是一样的，不同的是uuid是我们发送给后台，token是后台发送给我们
 
 使用
 
-![3](https://gitee.com/feng-chengxiang/picture/raw/master/img/3.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/3.png?Expires=1648299845&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=23rEqbs4XsMjyq0LE5riIfvDILc%3D)
 
 注意阻止一下form标签默认行为
 
-![4](https://gitee.com/feng-chengxiang/picture/raw/master/img/4.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/4.png?Expires=1648299859&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=zVwBdMmI%2F8OPVHlSx6BwMXp01ys%3D)
 
 登录成功后台显示的数据
 
-![5](https://gitee.com/feng-chengxiang/picture/raw/master/img/5.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/5.png?Expires=1648299878&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=EhLlQNaTeEhkA1bFwLKSxRy1ZS8%3D)
 
 
 
@@ -2102,13 +2102,13 @@ token一般来说就是识别用户的唯一标志符，我们注册成功后后
 
 不完善的地方
 
-![7](https://gitee.com/feng-chengxiang/picture/raw/master/img/7.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/7.png?Expires=1648299903&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=h3XWKypEwEZC2i6R1q4KWv3O7qE%3D)
 
 由此需要新的接口
 
 接口
 
-![6](https://gitee.com/feng-chengxiang/picture/raw/master/img/6.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/6.png?Expires=1648299892&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=BIfrR9dx8v8qMbXDMJcTZD8ZFXU%3D)
 
 
 
@@ -2116,51 +2116,51 @@ api
 
 
 
-![8](https://gitee.com/feng-chengxiang/picture/raw/master/img/8.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/8.png?Expires=1648299915&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=4AxV%2FfEgZ7RGB5RdhwYx26wqS4k%3D)
 
 vuex
 
 
 
-![9](https://gitee.com/feng-chengxiang/picture/raw/master/img/9.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/9.png?Expires=1648299928&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=6DJKL0nyy%2FxeZlXta5vvNZGAbw8%3D)
 
 请求拦截器
 
 
 
-![10](https://gitee.com/feng-chengxiang/picture/raw/master/img/10.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/10.png?Expires=1648299941&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=%2Fs1IYgTlBY1oWwdukMZuVhbI0nQ%3D)
 
 验证
 
 
 
-![11](https://gitee.com/feng-chengxiang/picture/raw/master/img/11.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/10.png?Expires=1648299941&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=%2Fs1IYgTlBY1oWwdukMZuVhbI0nQ%3D)
 
 观察
 
 
 
-![12](https://gitee.com/feng-chengxiang/picture/raw/master/img/12.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/12.png?Expires=1648299967&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Bav%2FNnfKONjNoIRMgwt0HC4X%2FlE%3D)
 
 完善vuex
 
 
 
-![13](https://gitee.com/feng-chengxiang/picture/raw/master/img/13.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/13.png?Expires=1648299978&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=kRTV3SMh52BJYBSLa%2FpwoAVeGdw%3D)
 
 
 
-![14](https://gitee.com/feng-chengxiang/picture/raw/master/img/14.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/14.png?Expires=1648299989&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=HsFtgRNLXplik0dLSFnJeSdFrdY%3D)
 
 完善登录成功后header组件展示信息
 
 
 
-![15](https://gitee.com/feng-chengxiang/picture/raw/master/img/15.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/15.png?Expires=1648300003&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=HeM09KOTLjcX%2F9mdmai%2FjuRTT2o%3D)
 
 
 
-![16](https://gitee.com/feng-chengxiang/picture/raw/master/img/16.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/16.png?Expires=1648300014&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=wBAx1MlpwKhtGDjHHbB3BjpJIQg%3D)
 
 #### 4.解决bug
 
@@ -2174,11 +2174,11 @@ vuex
 
 
 
-![17](https://gitee.com/feng-chengxiang/picture/raw/master/img/17.png)
+![17](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/17.png?Expires=1648300029&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=K%2FHnBRkc%2BzbsJ9GiCup4KqLHPPs%3D)
 
 
 
-![18](https://gitee.com/feng-chengxiang/picture/raw/master/img/18.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/18.png?Expires=1648300093&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=j1jPhfVW%2BTJb1A5kSnihqmsGCmQ%3D)
 
 但这样还是有问题：用户一旦离开home组件，再次刷新header组件还是变成未登录状态
 
@@ -2196,17 +2196,17 @@ actions中的getuserInfo，而我们只在home组件mounted时dispatch了，所�
 
 vuex
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/19.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/19.png?Expires=1648300108&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=OIEe454gvj3A21s31sUaXBxg2YI%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/20.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/20.png?Expires=1648300122&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fR5mEJGxaDPPuHp4WpimAZwY4O0%3D)
 
 使用
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/21.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/21.png?Expires=1648300134&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Ws8tSFFk0Ll8vvuDSttfDwvn5%2BI%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/22.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/22.png?Expires=1648300145&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=iot0IHyUM0ByGI%2Bkf17lgaOrXaA%3D)
 
 完成退出功能后，再使用导航守卫解决bug
 
@@ -2281,17 +2281,17 @@ router.beforeEach(async (to,from,next)=>{
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/23.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/23.png?Expires=1648300183&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=7mbzyoDYVkT4mpOGyr4hxXi%2BQWM%3D)
 
 ###### 1.2获取商品清单格式
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/24.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/24.png?Expires=1648300197&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=2xnRWt%2FMs3kZozw%2F2TB8htFyrhY%3D)
 
 ###### 1.3动态展示数据
 
 收件人及其地址信息：
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/25.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/25.png?Expires=1648300223&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=nDOk5LUedvDvz4jlcWwdc%2BLI1SY%3D)
 
 获取商品清单格式:纯粹动态展示，没啥好说的
 
@@ -2303,7 +2303,7 @@ router.beforeEach(async (to,from,next)=>{
 
 看看接口参数有点多
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/26.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/26.png?Expires=1648300235&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=hhsyxUJ6dl9Jue4Ar2lldECcO%2B0%3D)
 
 例子
 
@@ -2356,13 +2356,13 @@ router.beforeEach(async (to,from,next)=>{
 
 在main.js中
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/28.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/28.png?Expires=1648300269&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=OZ2ucMiTiBP7DPKYXP3PwYghktk%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/27.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/27.png?Expires=1648300249&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Aexgzq2lB7cdJbXPzqsyVi1z15c%3D)
 
 最后挂载在Vue原型上
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/29.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/29.png?Expires=1648300282&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=azx%2Bad66QcythSXUhRFJRd4F2a4%3D)
 
 使用
 
@@ -2392,7 +2392,7 @@ router.beforeEach(async (to,from,next)=>{
 
 result
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/30.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/30.png?Expires=1648300293&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=VQCwSIr3LfA0ChnxU14OBMSzYa0%3D)
 
 ###### 2.2开始开发支付组件
 
@@ -2400,7 +2400,7 @@ result
 
 获取订单信息的api
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/31.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/31.png?Expires=1648300306&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=ZvAdL%2Bix3kNnj0NVkzmpgk0q1bA%3D)
 
 注意尽量别在生命周期函数中使用async-await
 
@@ -2408,11 +2408,11 @@ result
 
 从query中获取orderId
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/33.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/33.png?Expires=1648300346&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=boNO3iLyCJD1Muhpc8FzuG3Uxr8%3D)
 
 result格式
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/32.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/32.png?Expires=1648300329&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fqUcO%2BOAgM%2Fb%2BueMiOBLW3o36mw%3D)
 
 ###### 2.3点击支付弹出二维码
 
@@ -2432,11 +2432,11 @@ cnpm install babel-plugin-component -D
 
 main.js中
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/34.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/34.png?Expires=1648300360&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=aYZm3tjuNqc5bvuLY6wafRZCp5I%3D)
 
 pay组件中点击立即支付
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/35.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/35.png?Expires=1648300373&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=dPXrLqeun7Rf737AUIVUdJi3MoE%3D)
 
 接下来需要使用一个插件qrcode
 
@@ -2448,27 +2448,27 @@ npm网站上可以看到使用方式
 
 cnpm insatll i qrcode --save
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/36.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/36.png?Expires=1648300386&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=J8EOxTfkbsf2qYajU0T3r74NwNI%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/37.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/37.png?Expires=1648300399&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=LgwrJcqg4gOSD4c9cLdDiq%2BiWk4%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/38.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/38.png?Expires=1648300413&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=B21FkuoMmlIIPYlHIrmM69a%2Bs18%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/39.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/39.png?Expires=1648300426&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=sowjyTNZI2lY7892cCUFeGaEf98%3D)
 
 那么这个qrcode就是把特定的字符串(后台传过来的)变成二维码图片
 
 接下来
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/40.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/40.png?Expires=1648300440&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=u8cBe2SbSi5KkdsymGpNZDm5eto%3D)
 
 
 
 我们使用setInterval每隔一段时间就向服务器发送请求，直到支付成功为止
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/42.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/42.png?Expires=1648300467&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=y4N3rB6gTOEg2jmRomUMmGy4xZs%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/41.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/41.png?Expires=1648300453&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=LH4m44kU5gqfWklKl8m0LrEbMnE%3D)
 
 最后编辑一下确认和取消按钮
 
@@ -2519,11 +2519,11 @@ beforeClose配置项，官网也是有的
 
 **该组件是多级路由**
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/43.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/43.png?Expires=1648300483&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=mS%2B0idgGBarrKObjOH2lIKakwoY%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/44.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/44.png?Expires=1648300494&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=0yfGzvbwhqwV37YbC3fckQfi%2FHo%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/45.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/45.png?Expires=1648300509&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=COi0YQmqG4FnD7Fb2g4G65qozyU%3D)
 
 router文件
 
@@ -2552,9 +2552,9 @@ router文件
     },
 ```
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/46.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/46.png?Expires=1648300549&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=Cq9qUbU8IPsGrmAZ858eAn8cnL8%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/47.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/47.png?Expires=1648300563&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=4XEddMYIACLCSWxktU6icbbLls8%3D)
 
 ###### 3.2开发我的订单
 
@@ -2562,7 +2562,7 @@ router文件
 
 api
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/48.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/48.png?Expires=1648300577&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=KwRREzW%2Fo1%2B0rOkAkzRMJ8B3%2BCg%3D)
 
 成功实例
 
@@ -2617,7 +2617,7 @@ api
 }
 ```
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/49.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/49.png?Expires=1648300592&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=XCH0gw%2FalUfWy2OnjHireROVk6w%3D)
 
 剩下的就简单了，请求成功(用this.$API发请求)。存储在组件的data中，动态展示数据就行了
 
@@ -2635,13 +2635,13 @@ C:\语言学习\Java学习\JavaWeb\01-html&CSS\代码\JavaWeb\01_html_css\html
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/50.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/50.png?Expires=1648300606&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=B5n%2F3tVV2B8sCNuH2sRgva0yrPg%3D)
 
 处理一下分页器
 
 这部分详细可见第六天分页器的内容
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/51.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/51.png?Expires=1648300620&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=BsvtWgvNGUkPBOxIaxFXUK8PtxY%3D)
 
 
 
@@ -2670,7 +2670,7 @@ C:\语言学习\Java学习\JavaWeb\01-html&CSS\代码\JavaWeb\01_html_css\html
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/52.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/52.png?Expires=1648300634&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=DpQcx1hZLfQkfg6gmQmFXb6TUUk%3D)
 
 
 
@@ -2680,7 +2680,7 @@ C:\语言学习\Java学习\JavaWeb\01-html&CSS\代码\JavaWeb\01_html_css\html
 
 #### 2.完善登录逻辑
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/53.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/53.png?Expires=1648300651&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=j810bxxNo%2Fab3HqTjgN7c0ZOh3c%3D)
 
 
 
@@ -2700,9 +2700,9 @@ npm网址
 
 cnpm install --save vue-lazyload
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/54.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/54.png?Expires=1648300664&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=XBjznM8a6wJuj%2FZpuVq6B5BGKqI%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/55.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/55.png?Expires=1648300677&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=6aNe%2B3gEPoLGj9Wf1sxOPRmm1eI%3D)
 
 
 
@@ -2765,15 +2765,15 @@ VeeValidate.Validator.extend("tongyi", {
 
 ```
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/56.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/56.png?Expires=1648300693&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=K8OTpsIdQ2Ha%2FEAUNKMtpj%2FJ9CU%3D)
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/57.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/57.png?Expires=1648300706&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=RU3e%2Fv4RFRorv7cGiSQowbQevBY%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/58.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/58.png?Expires=1648300720&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=blwHVMAkbpfYBJO8J7FsUnaF2sg%3D)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/59.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/59.png?Expires=1648300734&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=JWxZMUedUEmPADGEJiRtKztVWw0%3D)
 
 没有必要深究，看的懂就行
 

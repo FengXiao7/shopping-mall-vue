@@ -311,7 +311,7 @@ this.$router.push({
 
 #### 1.编程式导航路由跳转到当前路由(参数不变), 多次执行会抛出NavigationDuplicated的警告错误?
 
-![image-20211218161028743](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211218161028743.png)
+![image-20211218161028743](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211218161028743.png)
 
 注意:编程式导航（push|replace）才会有这种情况的异常，声明式导航是没有这种问题，因为声明式导航内部已经解决这种问题。
 
@@ -406,7 +406,7 @@ export default requests;
 
 在vue.config.js配置下
 
-![image-20211220133706249](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220133706249.png)
+![image-20211220133706249](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220133706249.png)
 
 #### 6.nprogress进度条的使用
 
@@ -452,13 +452,13 @@ requests.interceptors.response.use((res)=>{
 
 这样我们每次请求开始就会有进度条，响应开始进度条就结束
 
-![image-20211218183314480](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211218183314480.png)
+![image-20211218183314480](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211218183314480.png)
 
 ##### 6.3修改样式
 
 进度条样式可以改的，但是需要改别人的源码nprogress/nprogress.css的样式
 
-![image-20211218183849675](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211218183849675.png)
+![image-20211218183849675](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211218183849675.png)
 
 #### 7.vuex模块使用
 
@@ -497,7 +497,7 @@ export default new Vuex.Store({
 
 ##### 7.4注册
 
-![image-20211219154829683](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219154829683.png)
+![image-20211219154829683](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219154829683.png)
 
 ##### 7.5模块化开发
 
@@ -575,7 +575,7 @@ export default{
 }
 ```
 
-![image-20211219180748465](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219180748465.png)
+![image-20211219180748465](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219180748465.png)
 
 ##### 8.2TypeNav发出请求
 
@@ -601,7 +601,7 @@ export default {
 
 ##### 8.3用v-for改写html
 
-![image-20211219194033386](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219194033386.png)
+![image-20211219194033386](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219194033386.png)
 
 # 第三天
 
@@ -609,29 +609,29 @@ export default {
 
 ##### 1.1用css
 
-![image-20211219195424715](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219195424715.png)
+![image-20211219195424715](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219195424715.png)
 
 ##### 1.2用JS
 
-![image-20211219202934211](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202934211.png)
+![image-20211219202934211](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219202934211.png)
 
-![image-20211219202802957](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202802957.png)
+![image-20211219202802957](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219202802957.png)
 
-![image-20211219202852170](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219202852170.png)
+![image-20211219202852170](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219202852170.png)
 
 #### 2.控制2,3级分类的显示与隐藏
 
-![image-20211219203454173](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219203454173.png)
+![image-20211219203454173](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219203454173.png)
 
 改用js
 
-![image-20211219204057585](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211219204057585.png)
+![image-20211219204057585](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211219204057585.png)
 
 #### 3.函数抖动
 
 ##### 3.1问题
 
-![image-20211220134425799](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220134425799.png)
+![image-20211220134425799](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220134425799.png)
 
 如果业务逻辑过多，浏览器就会来不及计算，出现卡顿现象
 
@@ -643,15 +643,15 @@ export default {
 
 官方文档[lodash.debounce | Lodash 中文文档 | Lodash 中文网 (lodashjs.com)](https://www.lodashjs.com/docs/lodash.debounce)
 
-![image-20211220140023635](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140023635.png)
+![image-20211220140023635](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220140023635.png)
 
 ##### 3.3节流
 
 节流：在规定的间隔时间范围内不会重复触发回调，只有大于这个时间间隔才会触发回调，把频繁触发变为少量触发
 
-![image-20211220140755918](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140755918.png)
+![image-20211220140755918](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220140755918.png)
 
-![image-20211220140915519](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220140915519.png)
+![image-20211220140915519](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220140915519.png)
 
 官方文档：[lodash.throttle | Lodash 中文文档 | Lodash 中文网 (lodashjs.com)](https://www.lodashjs.com/docs/lodash.throttle)
 
@@ -665,7 +665,7 @@ export default {
 
 ##### 4.2编写
 
-![image-20211220141902698](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220141902698.png)
+![image-20211220141902698](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220141902698.png)
 
 
 
@@ -685,23 +685,23 @@ router-link是一个组件：相当于VueComponent类的实例对象。快速滑
 
 ##### 5.3编程式导航+事件委派
 
-![image-20211220143622640](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220143622640.png)
+![image-20211220143622640](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220143622640.png)
 
 但这样也有很多问题，我们一个一个解决
 
 有两个问题
 
-![image-20211220143920025](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220143920025.png)
+![image-20211220143920025](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220143920025.png)
 
 ###### 5.3.1自定义属性解决
 
 我们给一二三级联动都加上两个自定义属性：data-categoryName和data-categoryId1(这里只演示一级的，二三级改下名字)
 
-![image-20211220152552976](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220152552976.png)
+![image-20211220152552976](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220152552976.png)
 
-![image-20211220152813991](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220152813991.png)
+![image-20211220152813991](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220152813991.png)
 
-![image-20211220153132429](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220153132429.png)
+![image-20211220153132429](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220153132429.png)
 
 由此解决了a标签的问题。
 
@@ -737,7 +737,7 @@ router-link是一个组件：相当于VueComponent类的实例对象。快速滑
       }
 ```
 
-![image-20211220153318794](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211220153318794.png)
+![image-20211220153318794](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211220153318794.png)
 
 #### 6.为search路由组件集成TypeNav全局组件
 
@@ -745,29 +745,29 @@ router-link是一个组件：相当于VueComponent类的实例对象。快速滑
 
 ##### 6.2出现问题
 
-![image-20211221171454161](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221171454161.png)
+![image-20211221171454161](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221171454161.png)
 
 ##### 6.3解决问题
 
 ###### 6.3.1增加show属性
 
-![image-20211221172554607](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221172554607.png)
+![image-20211221172554607](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221172554607.png)
 
 ###### 6.3.2动态使用show
 
-![image-20211221172635590](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221172635590.png)
+![image-20211221172635590](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221172635590.png)
 
 这样我们的TypeNav在home里就会直接显示，在search里会隐藏
 
-![image-20211221172700558](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221172700558.png)
+![image-20211221172700558](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221172700558.png)
 
 ###### 6.3.3鼠标滑动移除后TypeNav隐藏问题
 
 我们希望在home里，鼠标滑动移除后TypeNav显示，而在search里的TypeNav鼠标滑动移除后隐藏
 
-![image-20211221173036873](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221173036873.png)
+![image-20211221173036873](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221173036873.png)
 
-![image-20211221173348883](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221173348883.png)
+![image-20211221173348883](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221173348883.png)
 
 !(C:\Users\18284\AppData\Roaming\Typora\typora-user-images\image-20211221173111367.png)
 
@@ -793,13 +793,13 @@ cnpm install --save animate.css
 import 'animate.css'
 ```
 
-![image-20211221181151770](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221181151770.png)
+![image-20211221181151770](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221181151770.png)
 
 #### 7.TypeNav三级联动性能优化
 
 发现一个问题来回跳转home和search组件会不断发送请求
 
-![image-20211221182215723](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211221182215723.png)
+![image-20211221182215723](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211221182215723.png)
 
 我们把这行代码写在根组件App的mounted里就行了
 
@@ -809,9 +809,9 @@ import 'animate.css'
 
 我们希望得到的效果是这样，用户在搜索框搜索的数据(用的params)和在三级联动(用的query)中选择的数据，可以一起作为参数传过去，这就需要合并参数。
 
-![image-20211222131038188](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222131038188.png)
+![image-20211222131038188](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222131038188.png)
 
-![image-20211222131112118](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222131112118.png)
+![image-20211222131112118](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222131112118.png)
 
 这两个if不用也行。而且注意，由于这两个location他们的name都是search，并且分别写了
 
@@ -832,7 +832,7 @@ cnpm install --save mockjs
 
 ###### 2.1.2创建文件
 
-![image-20211222135820578](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222135820578.png)
+![image-20211222135820578](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222135820578.png)
 
 ###### 2.1.3准备图片
 
@@ -864,7 +864,7 @@ main.js里面import
 
 新建文件
 
-![image-20211222142158378](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222142158378.png)
+![image-20211222142158378](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222142158378.png)
 
 ```JS
 //这个文件和request.js几乎一样，只改了baseURL和对外暴露名
@@ -913,13 +913,13 @@ export const reqGetBannerList=()=>{
 
 我们在ListContainer里发送请求到仓库的服务员那里
 
-![image-20211222144601078](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222144601078.png)
+![image-20211222144601078](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222144601078.png)
 
 在仓库里写好对应的函数名
 
-![image-20211222144706652](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222144706652.png)
+![image-20211222144706652](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222144706652.png)
 
-![image-20211222144801914](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222144801914.png)
+![image-20211222144801914](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222144801914.png)
 
 接下来，我们和以前一样把vuex完善好，最好不要忘记使用mapState取出来，这部分就不截图了，和以前一样的
 
@@ -995,7 +995,7 @@ export const reqGetBannerList=()=>{
 
 
 
-![image-20211222180754841](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222180754841.png)
+![image-20211222180754841](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222180754841.png)
 
 也就是说第一个参数也可以是真实dom
 
@@ -1007,17 +1007,17 @@ cnpm install --save swiper@5
 
 我们在ListContainer里面写好v-for,写好对应的swiper所需的必要结构，正确引入swiper
 
-![image-20211222163254602](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222163254602.png)
+![image-20211222163254602](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222163254602.png)
 
 正确引入swiper,要引入相关js和css
 
-![image-20211222161345749](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222161345749.png)
+![image-20211222161345749](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222161345749.png)
 
 在写必要的swiper js代码时，遇见了一个问题，不知道在什么时机写，因为涉及到异步请求数据和v-for遍历数据的问题。
 
 具体来说是因为swiper需要等待页面结构初始化完成，才生效。但是我们有一个v-for里面在用axios获取后台数据，这就产生了问题。
 
-![1](https://gitee.com/feng-chengxiang/picture/raw/master/img/1.png)
+![1](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/1.png)
 
 我们目前用两个不是很好的办法解决。
 
@@ -1031,7 +1031,7 @@ cnpm install --save swiper@5
 
 使用watch只能保证数据由空变化到有数组，但不能保证v-for执行完了
 
-![image-20211222164147517](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222164147517.png)
+![image-20211222164147517](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222164147517.png)
 
 ![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222164555010.png?Expires=1648297388&OSSAccessKeyId=TMP.3KenrcyiqGHLSpA8a4o6pxq62WdjmtMBWqjQkhTY3AiQnZPVQ7SAyb3yyH4zayA2KiiRu4vahzDgYcRdVukAo4fMwJ1QJN&Signature=fEvS%2F3sAdUIzAtnygbJ0OTZcyk8%3D)
 
@@ -1039,7 +1039,7 @@ cnpm install --save swiper@5
 
 和开发ListContainer组件差不多，也是使用mockjs请求假数据，然后vuex。这里有个不同的地方，就是我们发给仓库服务员dispatch的方法要写在home组件里不能写在floor组件里，因为我们用了两次floor组件。然后我们mockjs里面也是传的两套结构一样内容不一样的json，所以在home使用floor组件时用v-for遍历，再使用props传递参数给子组件floor，以便于后续操作。
 
-![image-20211222173101914](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222173101914.png)
+![image-20211222173101914](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222173101914.png)
 
 ###### 3.1动态展示数据
 
@@ -1047,25 +1047,25 @@ cnpm install --save swiper@5
 
 我们都是通过父组件穿给我们的list也就是props属性来收数据
 
-![image-20211222181314560](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222181314560.png)
+![image-20211222181314560](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222181314560.png)
 
-![image-20211222181517415](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222181517415.png)
+![image-20211222181517415](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222181517415.png)
 
 原因是因为，我们是通过props来接收数据的，这和以前不同，swiper需要的结构一定是建立好了的，所以可以直接卸载mouted里，不用像以前用watch+$nextTick的方式
 
-![image-20211222182906298](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222182906298.png)
+![image-20211222182906298](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222182906298.png)
 
-![image-20211222182953028](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211222182953028.png)
+![image-20211222182953028](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211222182953028.png)
 
 #### 4.提取出公共的轮播图组件
 
 我们发现在ListContainer和floor中都会用到轮播图，于是我们把它抽取出来做成一个公共组件。注意红字部分
 
-![image-20211223153340175](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211223153340175.png)
+![image-20211223153340175](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211223153340175.png)
 
-![image-20211223154000264](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211223154000264.png)
+![image-20211223154000264](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211223154000264.png)
 
-![image-20211223154049637](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211223154049637.png)
+![image-20211223154049637](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211223154049637.png)
 
 # 第五天
 
@@ -1122,9 +1122,9 @@ const getters={
 
 ###### 1.5注意事项
 
-![image-20211224175130576](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211224175130576.png)
+![image-20211224175130576](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211224175130576.png)
 
-![image-20211224175252209](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211224175252209.png)
+![image-20211224175252209](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211224175252209.png)
 
 Object.assign:这个就是把this.$route.query和this.$route.params的键值对转到this.searchParams上
 
@@ -1140,9 +1140,9 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 我们之前写的只能发送1次请求，但是我们的参数是在动态发生变化的，这部分逻辑见**第四天第一点**
 
-![image-20211224182706156](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211224182706156.png)
+![image-20211224182706156](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211224182706156.png)
 
-![image-20211225013404843](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211225013404843.png)
+![image-20211225013404843](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211225013404843.png)
 
 注意请求发完以后，一定要把3个商品ID清空，防止出现这种情况：用户第一次点击一个一级联动，正确返回结果：如果用户再点击一个二级联动，那么searchParms里上一次的categoryId1就还存在，这一次的categoryId2也存在，这显然是一种错误的情况。我们在这里清空后，具体工作流程是这样的：
 
@@ -1152,47 +1152,47 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 就是这个东西
 
-![image-20211227164829659](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227164829659.png)
+![image-20211227164829659](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227164829659.png)
 
-![image-20211227165018693](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227165018693.png)
+![image-20211227165018693](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227165018693.png)
 
-![image-20211227165041570](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227165041570.png)
+![image-20211227165041570](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227165041570.png)
 
 这里我们还可以顺便改变地址栏
 
-![image-20211227170527506](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227170527506.png)
+![image-20211227170527506](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227170527506.png)
 
 #### 3.关键字面包屑
 
 这个地方大部分和分类面包屑一样
 
-![image-20211227171716781](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227171716781.png)
+![image-20211227171716781](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227171716781.png)
 
-![image-20211227171742927](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227171742927.png)
+![image-20211227171742927](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227171742927.png)
 
 但是我们还想加一个需求，就是用户点击删除关键字后，搜索框里的内容置空。这就涉及到serach组件与header组件两个兄弟组件之间的通讯，这里我们使用全局事件总线$bus解决
 
 ###### 3.1注册全局事件总线
 
-![image-20211227172137094](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227172137094.png)
+![image-20211227172137094](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227172137094.png)
 
 ###### 3.2使用$bus
 
 在search组件里
 
-![image-20211227174555719](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227174555719.png)
+![image-20211227174555719](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227174555719.png)
 
 在header组件里
 
-![image-20211227174624703](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227174624703.png)
+![image-20211227174624703](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227174624703.png)
 
 在header组件里
 
-![image-20211227181534064](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227181534064.png)
+![image-20211227181534064](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227181534064.png)
 
 最后我们像在分类面包屑一样，处理下地址栏就行了
 
-![image-20211227182022187](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211227182022187.png)
+![image-20211227182022187](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211227182022187.png)
 
 #### 4.点击品牌重发请求
 
@@ -1200,37 +1200,37 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 ###### 4.1绑定单击事件
 
-![image-20211229143246598](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143246598.png)
+![image-20211229143246598](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143246598.png)
 
 ###### 4.2子向父传数据
 
-![image-20211229143343963](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143343963.png)
+![image-20211229143343963](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143343963.png)
 
 父组件触发回调
 
-![image-20211229143419059](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143419059.png)
+![image-20211229143419059](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143419059.png)
 
-![image-20211229143446843](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143446843.png)
+![image-20211229143446843](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143446843.png)
 
 演示
 
-![image-20211229143547513](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143547513.png)
+![image-20211229143547513](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143547513.png)
 
 ###### 4.3父组件发送请求
 
 格式
 
-![image-20211229143946008](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229143946008.png)
+![image-20211229143946008](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229143946008.png)
 
 整理参数
 
-![image-20211229144957978](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229144957978.png)
+![image-20211229144957978](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229144957978.png)
 
 处理品牌面包屑
 
-![image-20211229145053245](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229145053245.png)
+![image-20211229145053245](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229145053245.png)
 
-![image-20211229145114279](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229145114279.png)
+![image-20211229145114279](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229145114279.png)
 
 品牌面包屑必须用v-if不用v-show。原因:删除品牌后trademark是undefined，而undefined肯定不能split进行分割。所以这段逻辑直接v-if不予渲染代码，v-show虽然也能不进行展示，但是代码还是存在会报错。因为v-show只是display:none
 
@@ -1240,41 +1240,41 @@ Object.assign:这个就是把this.$route.query和this.$route.params的键值对�
 
 接口格式
 
-![image-20211229150240663](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150240663.png)
+![image-20211229150240663](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150240663.png)
 
-![image-20211229150416923](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150416923.png)
+![image-20211229150416923](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150416923.png)
 
 代码查看3个参数
 
-![image-20211229150929348](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150929348.png)
+![image-20211229150929348](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150929348.png)
 
-![image-20211229150949383](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229150949383.png)
+![image-20211229150949383](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229150949383.png)
 
-![image-20211229151022272](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229151022272.png)
+![image-20211229151022272](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229151022272.png)
 
 ###### 5.2传参
 
 这个地方和4.1大体一样也是用自定义事件的方法传参，这里我就只展示父组件search自定义事件的回调了
 
-![image-20211229153018651](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229153018651.png)
+![image-20211229153018651](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229153018651.png)
 
 ###### 5.3面包屑处理
 
 
 
-![image-20211229155122579](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155122579.png)
+![image-20211229155122579](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155122579.png)
 
 测试时发现错误
 
 props数组不能有重复元素
 
-![image-20211229155208324](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155208324.png)
+![image-20211229155208324](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155208324.png)
 
-![image-20211229155229103](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155229103.png)
+![image-20211229155229103](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155229103.png)
 
 又发现一个错误，删除分类面包屑之后也要把，售卖属性和品牌置空。这样更符合逻辑
 
-![image-20211229155630653](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229155630653.png)
+![image-20211229155630653](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229155630653.png)
 
 # 第六天
 
@@ -1282,7 +1282,7 @@ props数组不能有重复元素
 
 ###### 1.1参数
 
-![image-20211229163344499](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229163344499.png)
+![image-20211229163344499](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229163344499.png)
 
 也就是说总共只有4种：
 
@@ -1290,9 +1290,9 @@ props数组不能有重复元素
 
 ###### 1.2优化显示
 
-![image-20211229165820913](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229165820913.png)
+![image-20211229165820913](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229165820913.png)
 
-![image-20211229165856671](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229165856671.png)
+![image-20211229165856671](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229165856671.png)
 
 接下来我们优化下箭头样式，在阿里图标里面找
 
@@ -1300,9 +1300,9 @@ props数组不能有重复元素
 
 [尚硅谷VUE项目实战，前端项目-尚品汇(大型\重磅)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Vf4y1T7bw?p=50&spm_id_from=pageDriver)24分10秒
 
-![image-20211229171944987](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229171944987.png)
+![image-20211229171944987](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229171944987.png)
 
-![image-20211229172014442](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229172014442.png)
+![image-20211229172014442](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229172014442.png)
 
 isOne判断order里面有无1，如果有那么就是综合可以给综合添加背景色，综合的箭头也可以显示，isTwo同理
 
@@ -1310,9 +1310,9 @@ isAsc判断order里面有无asd，如果有那么就是升序，对应箭头显�
 
 ###### 1.3点击综合或价格可触发请求
 
-![image-20211229175340621](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229175340621.png)
+![image-20211229175340621](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229175340621.png)
 
-![image-20211229175400389](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211229175400389.png)
+![image-20211229175400389](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211229175400389.png)
 
 #### 2.分页器
 
@@ -1404,7 +1404,7 @@ continues:代表分页连续页码个数
 
 ###### 2.1分页器参数计算
 
-![image-20211230163024204](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230163024204.png)
+![image-20211230163024204](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230163024204.png)
 
 子组件计算参数步骤:(父子组件通过props传参数)
 
@@ -1448,7 +1448,7 @@ continues:代表分页连续页码个数
 
 ###### 2.2动态展示分页器
 
-![image-20211230165825517](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230165825517.png)
+![image-20211230165825517](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230165825517.png)
 
 ###### 2.3发送请求
 
@@ -1456,13 +1456,13 @@ continues:代表分页连续页码个数
 
 父组件search里
 
-![image-20211230180215720](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230180215720.png)
+![image-20211230180215720](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230180215720.png)
 
-![image-20211230180324351](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230180324351.png)
+![image-20211230180324351](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230180324351.png)
 
 子组件全局分页组件里
 
-![image-20211230180630347](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211230180630347.png)
+![image-20211230180630347](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211230180630347.png)
 
 完整代码
 
@@ -1596,19 +1596,19 @@ export default {
 
 ###### 1.1路由相关
 
-![image-20211231163320496](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231163320496.png)
+![image-20211231163320496](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231163320496.png)
 
 我们希望点击search组件的商品图片可以跳转到详情页，为此必须传参(用params参数)，所以要加一个占位符
 
-![image-20211231163521516](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231163521516.png)
+![image-20211231163521516](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231163521516.png)
 
 使用的时候声明式导航就可以了
 
 我们发现路由信息太多把它拆分出去
 
-![image-20211231164112738](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231164112738.png)
+![image-20211231164112738](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231164112738.png)
 
-![image-20211231164142175](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231164142175.png)
+![image-20211231164142175](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231164142175.png)
 
 ###### 1.2滚动行为
 
@@ -1624,89 +1624,89 @@ export default {
 
 接口文档
 
-![image-20211231165745096](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231165745096.png)
+![image-20211231165745096](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231165745096.png)
 
 添加api
 
-![image-20211231170112001](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231170112001.png)
+![image-20211231170112001](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231170112001.png)
 
 vuex三件套
 
-![image-20211231170824906](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231170824906.png)
+![image-20211231170824906](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231170824906.png)
 
 小仓库
 
-![image-20211231170850389](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231170850389.png)
+![image-20211231170850389](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231170850389.png)
 
 dispatch发送时机,当detail组件挂载完毕就发送
 
-![image-20211231171643078](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231171643078.png)
+![image-20211231171643078](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231171643078.png)
 
 ###### 1.4分析detail组件结构
 
-![image-20211231172244724](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231172244724.png)
+![image-20211231172244724](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231172244724.png)
 
-![image-20211231172604395](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231172604395.png)
+![image-20211231172604395](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231172604395.png)
 
 ###### 1.5动态展示数据
 
 我们用getters简化仓库数据
 
-![image-20211231173848766](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173848766.png)
+![image-20211231173848766](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173848766.png)
 
 使用
 
-![image-20211231173917713](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173917713.png)
+![image-20211231173917713](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173917713.png)
 
-![image-20211231173945245](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173945245.png)
+![image-20211231173945245](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173945245.png)
 
 发现报错
 
-![image-20211231173816259](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231173816259.png)
+![image-20211231173816259](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231173816259.png)
 
 原因是因为我们的getters写的还不够完善.当服务器数据还没传过来时，categoryView是undefine，取categoryView里面的category1Name这些数据时自然就报错了，但是当后面服务器数据传过来时，就没这个问题了。所以说这个报错是一个假报错
 
 解决办法：
 
-![image-20211231174230793](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231174230793.png)
+![image-20211231174230793](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231174230793.png)
 
 我们接着动态展示数据
 
 在放大镜效果这里，我们需要把skuInfo.skuImageList的数据传给子组件
 
-![image-20211231181146948](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20211231181146948.png)
+![image-20211231181146948](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20211231181146948.png)
 
 ###### 1.6售卖属性展示
 
-![image-20220101163511645](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163511645.png)
+![image-20220101163511645](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163511645.png)
 
-![image-20220101163607168](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163607168.png)
+![image-20220101163607168](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163607168.png)
 
 v-for去取
 
-![image-20220101163732360](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163732360.png)
+![image-20220101163732360](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163732360.png)
 
-![image-20220101163753423](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101163753423.png)
+![image-20220101163753423](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101163753423.png)
 
 ###### 1.7放大镜和轮播图图片处理
 
-![image-20220101171004252](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171004252.png)
+![image-20220101171004252](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171004252.png)
 
 我们使用swiper，并让其一次展示3张图
 
-![image-20220101171103542](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171103542.png)
+![image-20220101171103542](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171103542.png)
 
 需求：点击轮播图小图，放大镜展示。
 
 由于轮播图ImageList组件和放大镜Zoom组件是兄弟组件，我们用全局时间总线解决
 
-![image-20220101171327483](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171327483.png)
+![image-20220101171327483](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171327483.png)
 
-![image-20220101171354501](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101171354501.png)
+![image-20220101171354501](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101171354501.png)
 
 ###### 1.8实现放大镜
 
-![image-20220101174705508](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101174705508.png)
+![image-20220101174705508](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101174705508.png)
 
 完整代码
 
@@ -1733,17 +1733,17 @@ v-for去取
     },
 ```
 
-![image-20220319174745551](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220319174745551.png)
+![image-20220319174745551](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220319174745551.png)
 
 ###### 1.9加入购物车按钮
 
-![image-20220101175544481](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101175544481.png)
+![image-20220101175544481](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101175544481.png)
 
-![image-20220101181150297](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101181150297.png)
+![image-20220101181150297](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101181150297.png)
 
-![image-20220101181212456](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101181212456.png)
+![image-20220101181212456](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101181212456.png)
 
-![image-20220101181226806](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220101181226806.png)
+![image-20220101181226806](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220101181226806.png)
 
 #### 2.添加购物车相关
 
@@ -1751,15 +1751,15 @@ v-for去取
 
 ###### 2.1将购物车数据写入服务器
 
-![image-20220102150344398](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102150344398.png)
+![image-20220102150344398](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102150344398.png)
 
-![image-20220102152916614](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102152916614.png)
+![image-20220102152916614](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102152916614.png)
 
-![image-20220102152938863](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102152938863.png)
+![image-20220102152938863](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102152938863.png)
 
-![image-20220102153002164](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102153002164.png)
+![image-20220102153002164](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102153002164.png)
 
-![image-20220102153129510](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102153129510.png)
+![image-20220102153129510](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102153129510.png)
 
 ###### 2.2判断写入服务器是否成功
 
@@ -1773,21 +1773,21 @@ v-for去取
 
 actions
 
-![image-20220102162548116](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102162548116.png)
+![image-20220102162548116](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102162548116.png)
 
 detail组件
 
-![image-20220102162622501](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102162622501.png)
+![image-20220102162622501](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102162622501.png)
 
 ###### 2.3添加购物车成功路由
 
 组件老师已写好，注册使用即可
 
-![image-20220102163355449](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102163355449.png)
+![image-20220102163355449](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102163355449.png)
 
 
 
-![image-20220102163331390](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102163331390.png)
+![image-20220102163331390](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102163331390.png)
 
 ###### 2.4传递参数给AddCartSuccess组件
 
@@ -1803,19 +1803,19 @@ detail组件
 
 Detail组件
 
-![image-20220102165651142](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102165651142.png)
+![image-20220102165651142](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102165651142.png)
 
 AddCartSuccess组件
 
-![image-20220102165726454](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102165726454.png)
+![image-20220102165726454](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102165726454.png)
 
 接下来就把computed里的数据动态展示就行了
 
-![image-20220102170322230](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102170322230.png)
+![image-20220102170322230](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102170322230.png)
 
 效果
 
-![image-20220102170340425](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102170340425.png)
+![image-20220102170340425](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102170340425.png)
 
 ###### 2.5实现跳转回产品详情页的功能
 
@@ -1823,7 +1823,7 @@ AddCartSuccess组件
 
 AddCartSuccess组件
 
-![image-20220102171123483](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102171123483.png)
+![image-20220102171123483](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102171123483.png)
 
 ###### 2.6实现跳转到购物车功能
 
@@ -1835,29 +1835,29 @@ AddCartSuccess组件
 
 ###### 1.1接口
 
-![image-20220102173139793](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102173139793.png)
+![image-20220102173139793](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102173139793.png)
 
-![image-20220102175517153](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175517153.png)
+![image-20220102175517153](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175517153.png)
 
-![image-20220102175611406](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175611406.png)
+![image-20220102175611406](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175611406.png)
 
 shopCart组件
 
-![image-20220102175637514](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175637514.png)
+![image-20220102175637514](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175637514.png)
 
-![image-20220102175913797](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102175913797.png)
+![image-20220102175913797](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102175913797.png)
 
 ###### 1.2游客UUID
 
-![image-20220102181802267](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102181802267.png)
+![image-20220102181802267](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102181802267.png)
 
 在store/detail/index.vue  也就是小仓库下调用
 
-![image-20220102181903741](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102181903741.png)
+![image-20220102181903741](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102181903741.png)
 
 把这个uuid_token写在响应头里，要和后台商量好
 
-![image-20220102182024739](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220102182024739.png)
+![image-20220102182024739](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220102182024739.png)
 
 带上uuid后，便可正常获取购物车数据
 
@@ -1865,13 +1865,13 @@ shopCart组件
 
 actions里result格式
 
-![image-20220103155522438](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103155522438.png)
+![image-20220103155522438](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103155522438.png)
 
-![image-20220103162524485](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103162524485.png)
+![image-20220103162524485](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103162524485.png)
 
 使用
 
-![image-20220103162548358](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103162548358.png)
+![image-20220103162548358](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103162548358.png)
 
 ###### 1.4动态展示数据
 
@@ -1881,17 +1881,17 @@ actions里result格式
 
 用户每次在购物车里增加，减少或者直接修改产品数我们都要向后台发送请求，这个请求我们已经写了
 
-![image-20220103163748959](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103163748959.png)
+![image-20220103163748959](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103163748959.png)
 
 注意skuNum参数是新的产品数-原来产品数。比如以前是4台手机，新的是7台，那么skuNum就是3；再比如以前是4台，新的是2台，那么skuNum就是-2
 
-![image-20220103164020891](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103164020891.png)
+![image-20220103164020891](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103164020891.png)
 
-![image-20220103163611305](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103163611305.png)
+![image-20220103163611305](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103163611305.png)
 
 (这个地方如果我们购买同一产品，后台会自动加上产品数的)
 
-![image-20220103180433397](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220103180433397.png)
+![image-20220103180433397](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220103180433397.png)
 
 ```JS
   //改变产品数量
@@ -1937,45 +1937,45 @@ actions里result格式
 
 ###### 1.6删除购物车商品
 
-![image-20220105161114447](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105161114447.png)
+![image-20220105161114447](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105161114447.png)
 
 接口
 
-![image-20220105153705806](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105153705806.png)
+![image-20220105153705806](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105153705806.png)
 
 api
 
-![image-20220105155731859](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105155731859.png)
+![image-20220105155731859](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105155731859.png)
 
 vuex
 
-![image-20220105155747890](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105155747890.png)
+![image-20220105155747890](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105155747890.png)
 
 使用
 
-![image-20220105155805499](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105155805499.png)
+![image-20220105155805499](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105155805499.png)
 
 1.7修改购物车商品状态
 
-![image-20220105161044457](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105161044457.png)
+![image-20220105161044457](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105161044457.png)
 
 接口
 
-![image-20220105161005273](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105161005273.png)
+![image-20220105161005273](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105161005273.png)
 
 api
 
-![image-20220105163935345](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105163935345.png)
+![image-20220105163935345](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105163935345.png)
 
 vuex
 
-![image-20220105164024479](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105164024479.png)
+![image-20220105164024479](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105164024479.png)
 
 使用
 
-![image-20220105164049434](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105164049434.png)
+![image-20220105164049434](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105164049434.png)
 
-![image-20220105164105830](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105164105830.png)
+![image-20220105164105830](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105164105830.png)
 
 ###### 1.7删除所选商品
 
@@ -1983,7 +1983,7 @@ vuex
 
 使用
 
-![image-20220105172915858](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220105172915858.png)
+![image-20220105172915858](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220105172915858.png)
 
 vuex
 
@@ -2010,19 +2010,19 @@ vuex
 
 
 
-![image-20220106154627420](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154627420.png)
+![image-20220106154627420](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154627420.png)
 
 使用
 
-![image-20220106154851186](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154851186.png)
+![image-20220106154851186](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154851186.png)
 
 注意如果没有购物车没有商品，全选按钮会有bug
 
-![image-20220106154738267](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154738267.png)
+![image-20220106154738267](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154738267.png)
 
-![image-20220106154716673](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154716673.png)
+![image-20220106154716673](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154716673.png)
 
-![image-20220106154819406](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106154819406.png)
+![image-20220106154819406](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106154819406.png)
 
 # 第九天
 
@@ -2032,45 +2032,45 @@ vuex
 
 登录注册组件老师已写好，直接引用。注意引用照片路径问题，在css使用别名要加一个~
 
-![image-20220106165408784](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106165408784.png)
+![image-20220106165408784](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106165408784.png)
 
 ###### 1.1验证码
 
 接口
 
-![image-20220106165456512](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106165456512.png)
+![image-20220106165456512](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106165456512.png)
 
 api
 
-![image-20220106173500934](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173500934.png)
+![image-20220106173500934](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173500934.png)
 
 vuex三连环
 
 我们把登录注册业务再注册一个小仓库
 
-![image-20220106173324141](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173324141.png)
+![image-20220106173324141](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173324141.png)
 
 使用
 
-![image-20220106173418178](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173418178.png)
+![image-20220106173418178](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173418178.png)
 
 ###### 1.2完成注册
 
 接口
 
-![image-20220106173624000](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173624000.png)
+![image-20220106173624000](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173624000.png)
 
 api
 
-![image-20220106173852297](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220106173852297.png)
+![image-20220106173852297](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220106173852297.png)
 
 vuex
 
-![image-20220107154750563](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107154750563.png)
+![image-20220107154750563](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107154750563.png)
 
 使用
 
-![image-20220107154824298](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107154824298.png)
+![image-20220107154824298](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107154824298.png)
 
 注册完毕记得跳转路由，目前还只是做了一半，还没有做验证。最后一天做
 
@@ -2078,29 +2078,29 @@ vuex
 
 接口
 
-![image-20220107163629177](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107163629177.png)
+![image-20220107163629177](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107163629177.png)
 
 api
 
-![image-20220107163715332](https://gitee.com/feng-chengxiang/picture/raw/master/img/image-20220107163715332.png)
+![image-20220107163715332](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/image-20220107163715332.png)
 
 vuex（这次要存token）
 
-![2](https://gitee.com/feng-chengxiang/picture/raw/master/img/2.png)
+![2](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/2.png)
 
 token一般来说就是识别用户的唯一标志符，我们注册成功后后台会为我们的账号添加一个token。在前台我们想要获取特定用户的信息往往只需要向后台发出token就可以了。本质上token和我们项目里的uuid功能是一样的，不同的是uuid是我们发送给后台，token是后台发送给我们
 
 使用
 
-![3](https://gitee.com/feng-chengxiang/picture/raw/master/img/3.png)
+![3](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/3.png)
 
 注意阻止一下form标签默认行为
 
-![4](https://gitee.com/feng-chengxiang/picture/raw/master/img/4.png)
+![4](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/4.png)
 
 登录成功后台显示的数据
 
-![5](https://gitee.com/feng-chengxiang/picture/raw/master/img/5.png)
+![5](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/5.png)
 
 
 
@@ -2108,13 +2108,13 @@ token一般来说就是识别用户的唯一标志符，我们注册成功后后
 
 不完善的地方
 
-![7](https://gitee.com/feng-chengxiang/picture/raw/master/img/7.png)
+![7](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/7.png)
 
 由此需要新的接口
 
 接口
 
-![6](https://gitee.com/feng-chengxiang/picture/raw/master/img/6.png)
+![6](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/6.png)
 
 
 
@@ -2122,51 +2122,51 @@ api
 
 
 
-![8](https://gitee.com/feng-chengxiang/picture/raw/master/img/8.png)
+![8](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/8.png)
 
 vuex
 
 
 
-![9](https://gitee.com/feng-chengxiang/picture/raw/master/img/9.png)
+![9](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/9.png)
 
 请求拦截器
 
 
 
-![10](https://gitee.com/feng-chengxiang/picture/raw/master/img/10.png)
+![10](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/10.png)
 
 验证
 
 
 
-![11](https://gitee.com/feng-chengxiang/picture/raw/master/img/11.png)
+![11](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/11.png)
 
 观察
 
 
 
-![12](https://gitee.com/feng-chengxiang/picture/raw/master/img/12.png)
+![12](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/12.png)
 
 完善vuex
 
 
 
-![13](https://gitee.com/feng-chengxiang/picture/raw/master/img/13.png)
+![13](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/13.png)
 
 
 
-![14](https://gitee.com/feng-chengxiang/picture/raw/master/img/14.png)
+![14](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/14.png)
 
 完善登录成功后header组件展示信息
 
 
 
-![15](https://gitee.com/feng-chengxiang/picture/raw/master/img/15.png)
+![15](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/15.png)
 
 
 
-![16](https://gitee.com/feng-chengxiang/picture/raw/master/img/16.png)
+![16](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/16.png)
 
 #### 4.解决bug
 
@@ -2180,11 +2180,11 @@ vuex
 
 
 
-![17](https://gitee.com/feng-chengxiang/picture/raw/master/img/17.png)
+![17](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/17.png)
 
 
 
-![18](https://gitee.com/feng-chengxiang/picture/raw/master/img/18.png)
+![18](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/18.png)
 
 但这样还是有问题：用户一旦离开home组件，再次刷新header组件还是变成未登录状态
 
@@ -2202,17 +2202,17 @@ actions中的getuserInfo，而我们只在home组件mounted时dispatch了，所�
 
 vuex
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/19.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/19.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/20.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/20.png)
 
 使用
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/21.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/21.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/22.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/22.png)
 
 完成退出功能后，再使用导航守卫解决bug
 
@@ -2287,17 +2287,17 @@ router.beforeEach(async (to,from,next)=>{
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/23.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/23.png)
 
 ###### 1.2获取商品清单格式
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/24.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/24.png)
 
 ###### 1.3动态展示数据
 
 收件人及其地址信息：
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/25.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/25.png)
 
 获取商品清单格式:纯粹动态展示，没啥好说的
 
@@ -2309,7 +2309,7 @@ router.beforeEach(async (to,from,next)=>{
 
 看看接口参数有点多
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/26.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/26.png)
 
 例子
 
@@ -2362,13 +2362,13 @@ router.beforeEach(async (to,from,next)=>{
 
 在main.js中
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/28.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/28.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/27.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/27.png)
 
 最后挂载在Vue原型上
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/29.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/29.png)
 
 使用
 
@@ -2398,7 +2398,7 @@ router.beforeEach(async (to,from,next)=>{
 
 result
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/30.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/30.png)
 
 ###### 2.2开始开发支付组件
 
@@ -2406,7 +2406,7 @@ result
 
 获取订单信息的api
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/31.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/31.png)
 
 注意尽量别在生命周期函数中使用async-await
 
@@ -2414,11 +2414,11 @@ result
 
 从query中获取orderId
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/33.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/33.png)
 
 result格式
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/32.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/32.png)
 
 ###### 2.3点击支付弹出二维码
 
@@ -2438,11 +2438,11 @@ cnpm install babel-plugin-component -D
 
 main.js中
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/34.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/34.png)
 
 pay组件中点击立即支付
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/35.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/35.png)
 
 接下来需要使用一个插件qrcode
 
@@ -2454,27 +2454,27 @@ npm网站上可以看到使用方式
 
 cnpm insatll i qrcode --save
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/36.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/36.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/37.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/37.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/38.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/38.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/39.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/39.png)
 
 那么这个qrcode就是把特定的字符串(后台传过来的)变成二维码图片
 
 接下来
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/40.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/40.png)
 
 
 
 我们使用setInterval每隔一段时间就向服务器发送请求，直到支付成功为止
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/42.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/42.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/41.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/41.png)
 
 最后编辑一下确认和取消按钮
 
@@ -2525,11 +2525,11 @@ beforeClose配置项，官网也是有的
 
 **该组件是多级路由**
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/43.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/43.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/44.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/44.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/45.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/45.png)
 
 router文件
 
@@ -2558,9 +2558,9 @@ router文件
     },
 ```
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/46.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/46.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/47.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/47.png)
 
 ###### 3.2开发我的订单
 
@@ -2568,7 +2568,7 @@ router文件
 
 api
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/48.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/48.png)
 
 成功实例
 
@@ -2623,7 +2623,7 @@ api
 }
 ```
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/49.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/49.png)
 
 剩下的就简单了，请求成功(用this.$API发请求)。存储在组件的data中，动态展示数据就行了
 
@@ -2641,13 +2641,13 @@ C:\语言学习\Java学习\JavaWeb\01-html&CSS\代码\JavaWeb\01_html_css\html
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/50.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/50.png)
 
 处理一下分页器
 
 这部分详细可见第六天分页器的内容
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/51.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/51.png)
 
 
 
@@ -2676,7 +2676,7 @@ C:\语言学习\Java学习\JavaWeb\01-html&CSS\代码\JavaWeb\01_html_css\html
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/52.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/52.png)
 
 
 
@@ -2686,7 +2686,7 @@ C:\语言学习\Java学习\JavaWeb\01-html&CSS\代码\JavaWeb\01_html_css\html
 
 #### 2.完善登录逻辑
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/53.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/53.png)
 
 
 
@@ -2706,9 +2706,9 @@ npm网址
 
 cnpm install --save vue-lazyload
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/54.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/54.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/55.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/55.png)
 
 
 
@@ -2771,15 +2771,15 @@ VeeValidate.Validator.extend("tongyi", {
 
 ```
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/56.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/56.png)
 
 
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/57.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/57.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/58.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/58.png)
 
-![](https://gitee.com/feng-chengxiang/picture/raw/master/img/59.png)
+![](https://picture-feng.oss-cn-chengdu.aliyuncs.com/img/59.png)
 
 没有必要深究，看的懂就行
 

@@ -8,7 +8,7 @@ const state={
 const actions={
     async categoryList(context){
         let result=await reqCategoryList();
-        // console.log(result);
+        // console.log('hahhhhahahha');
         if(result.code==200){
             //如果请求成功，那么服务员把后端请求到的数据交给大厨
             context.commit('CATEGORYLIST',result.data)

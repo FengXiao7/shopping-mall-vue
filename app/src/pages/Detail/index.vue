@@ -420,6 +420,7 @@ export default {
     },
   },
   mounted() {
+    console.log(1)
     this.$store.dispatch("detail/getGoodsInfo", this.$route.params.skuid);
   },
   computed: {

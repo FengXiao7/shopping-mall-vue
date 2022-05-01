@@ -145,8 +145,9 @@ export default {
         orderComment: this.msg, //买家的留言信息
         orderDetailList: this.orderInfo.detailArrayList, //商品清单
       };
+      // console.log(data)
       let result = await this.$API.reqSubmitOrder(tradeNo, data);
-      console.log(result);
+      // console.log(result);
       //成功返回订单号
       if (result.code == 200) {
         this.orderId = result.data;

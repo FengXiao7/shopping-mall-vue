@@ -40,7 +40,7 @@
       下一页
     </button>
     <input type="number" placeholder="输入页数" ref="EnterPage" min="1" :max="totalPage">
-    <button class="sui-btn btn-xlarge btn-danger" @click="go($refs.EnterPage.value)">前往</button>
+    <button  @click="go($refs.EnterPage.value)">前往</button>
     <button style="margin-left: 30px">共 {{ total }} 条</button>
   </div>
 </template>
@@ -75,6 +75,7 @@ export default {
           (end = this.totalPage), (start = this.totalPage - this.continues + 1);
         }
       }
+      // console.log(start,end)
       return { start, end };
     },
   },
@@ -88,6 +89,7 @@ export default {
       }
     }
   },
+
 };
 </script>
 

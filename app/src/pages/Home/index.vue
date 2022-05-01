@@ -35,7 +35,7 @@ export default {
     //       console.log(this.$store.state.user.token,"token");
     // console.log(this.$store.state.user.userInfo.name,"name");
       this.$store.dispatch("home/floorList")
-      
+      // console.log(this.floorList);
     },
 }
 </script>

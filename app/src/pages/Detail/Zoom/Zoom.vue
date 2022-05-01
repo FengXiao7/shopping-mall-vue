@@ -30,6 +30,8 @@
         let mask=this.$refs.mask
         let big=this.$refs.big
         //计算并修改left和top
+        // console.log(event)
+        console.log(mask.offsetWidth)
         let left=event.offsetX-mask.offsetWidth/2
         let top=event.offsetY-mask.offsetHeight/2
         //约束范围

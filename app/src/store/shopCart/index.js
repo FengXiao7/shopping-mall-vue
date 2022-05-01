@@ -41,7 +41,7 @@ const actions = {
             // console.log(promise);
         });
         //只有当PromiseArray中所有的Promise都成功，返回结果才成功
-        console.log(PromiseArray);
+        // console.log(PromiseArray);
         return Promise.all(PromiseArray)
     },
     //修改全部产品状态

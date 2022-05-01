@@ -132,7 +132,7 @@ export default {
       let { categoryname, categoryid1, categoryid2, categoryid3 } =
         element.dataset;
       //如果标签上有categoryName肯定是a标签，有categoryid1肯定是一级联动，二三级同理
-
+      // console.log(categoryname);
       //下面我们包装一下编程式导航需要的地址参数，我们用对象的形式包装一下
       let location = { name: "search" };
       let query = { categoryName: categoryname };
@@ -148,8 +148,8 @@ export default {
       }
       //整理完参数
 
-      location.params = this.$route.params;//这里的params参数用于传递搜索框里的内容
-      location.query = query;//query参数用于传递三级联动的内容
+      location.params = this.$route.params; //这里的params参数用于传递搜索框里的内容
+      location.query = query; //query参数用于传递三级联动的内容
       // console.dir(location);
       this.$router.push(location);
     },

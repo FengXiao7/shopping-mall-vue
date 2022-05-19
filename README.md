@@ -6,7 +6,7 @@
 
 # 视频：
 
-[黑马程序员Node.js全套入门教程，nodejs最新教程含es6模块化+npm+express+webpack+promise等_Nodejs实战案例详解_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1a34y167AZ?spm_id_from=333.337.search-card.all.click)
+https://www.bilibili.com/video/BV1Vf4y1T7bw?spm_id_from=333.999.0.0
 
 # 配套资料：
 
